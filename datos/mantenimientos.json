@@ -1,0 +1,44 @@
+[
+    {
+        "id_mantenimiento": 3,
+        "dominio": "JKL456",
+        "fecha_mantenimiento": "2023-07-05",
+        "descripcion_servicio": "Cambio de filtros",
+        "costo_mantenimiento": 150
+    },
+    {
+        "id_mantenimiento": 4,
+        "dominio": "MNO789",
+        "fecha_mantenimiento": "2023-08-12",
+        "descripcion_servicio": "Alineación y balanceo",
+        "costo_mantenimiento": 180
+    },
+    {
+        "id_mantenimiento": 5,
+        "dominio": "ABC123",
+        "fecha_mantenimiento": "2023-09-20",
+        "descripcion_servicio": "Cambio de bujías",
+        "costo_mantenimiento": 120
+    },
+    {
+        "id_mantenimiento": 6,
+        "dominio": "DEF456",
+        "fecha_mantenimiento": "2023-10-15",
+        "descripcion_servicio": "Reemplazo de frenos",
+        "costo_mantenimiento": 200
+    },
+    {
+        "id_mantenimiento": 7,
+        "dominio": "GHI789",
+        "fecha_mantenimiento": "2023-11-02",
+        "descripcion_servicio": "Cambio de aceite",
+        "costo_mantenimiento": 100
+    },
+    {
+        "id_mantenimiento": 8,
+        "dominio": "XYZ123",
+        "fecha_mantenimiento": "2023-12-10",
+        "descripcion_servicio": "Revisión de suspensión",
+        "costo_mantenimiento": 170
+    }
+]

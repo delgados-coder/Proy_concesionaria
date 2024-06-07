@@ -1,0 +1,82 @@
+[
+    {
+        "dominio": "JKL456",
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "anio": 2018,
+        "kilometraje": 40000,
+        "precio_compra": 18000,
+        "precio_venta": 20000,
+        "estado": "disponible"
+    },
+    {
+        "dominio": "MNO789",
+        "marca": "Honda",
+        "modelo": "Civic",
+        "anio": 2017,
+        "kilometraje": 35000,
+        "precio_compra": 17000,
+        "precio_venta": 19000,
+        "estado": "disponible"
+    },
+    {
+        "dominio": "ABC123",
+        "marca": "Chevrolet",
+        "modelo": "Cruze",
+        "anio": 2019,
+        "kilometraje": 30000,
+        "precio_compra": 20000,
+        "precio_venta": 22000,
+        "estado": "disponible"
+    },
+    {
+        "dominio": "DEF456",
+        "marca": "Ford",
+        "modelo": "Fiesta",
+        "anio": 2016,
+        "kilometraje": 42000,
+        "precio_compra": 15000,
+        "precio_venta": 17000,
+        "estado": "disponible"
+    },
+    {
+        "dominio": "GHI789",
+        "marca": "Volkswagen",
+        "modelo": "Gol",
+        "anio": 2015,
+        "kilometraje": 50000,
+        "precio_compra": 12000,
+        "precio_venta": 14000,
+        "estado": "disponible"
+    },
+    {
+        "dominio": "XYZ123",
+        "marca": "Toyota",
+        "modelo": "Yaris",
+        "anio": 2017,
+        "kilometraje": 38000,
+        "precio_compra": 16000,
+        "precio_venta": 18000,
+        "estado": "disponible"
+    },
+    {
+        "dominio": "RST456",
+        "marca": "Nissan",
+        "modelo": "Sentra",
+        "anio": 2018,
+        "kilometraje": 36000,
+        "precio_compra": 17500,
+        "precio_venta": 19500,
+        "estado": "disponible"
+    },
+    {
+        "dominio": "UVW789",
+        "marca": "Honda",
+        "modelo": "Fit",
+        "anio": 2016,
+        "kilometraje": 43000,
+        "precio_compra": 15500,
+        "precio_venta": 17500,
+        "estado": "disponible"
+    }
+]
