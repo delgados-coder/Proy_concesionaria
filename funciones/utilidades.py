@@ -1,3 +1,8 @@
+from funciones import clientes
+from funciones import autos
+from funciones import mantenimientos
+from funciones import transacciones
+
 import os
 
 #---------INICIO FUNCIONES CONSOLA------------#
@@ -139,22 +144,76 @@ def menu_mantenimientos():
 def gestionar_autos(accion):
     limpiar_consola()
     print(f"Gestionar Autos - {accion}:")
+    
+    if accion == 'Listar':
+        autos.listar_autos();
+    elif accion == 'Registrar':
+        autos.listar_autos();
+    elif accion == 'Eliminar':
+        autos.listar_autos();
+    elif accion == 'Editar':
+        autos.listar_autos();
+    elif accion == 'Cambiar Estado':
+        autos.listar_autos();
+    else:
+        print("Opción inválida.")
+        
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
 
 
 def gestionar_clientes(accion):
     limpiar_consola()
     print(f"Gestionar Clientes - {accion}:")
+    if accion == 'Listar':
+        clientes.listar_clientes();
+    elif accion == 'Registrar':
+        clientes.listar_clientes();
+    elif accion == 'Eliminar':
+        clientes.listar_clientes();
+    elif accion == 'Editar':
+        clientes.listar_clientes();
+    elif accion == 'Cambiar Estado':
+        clientes.listar_clientes();
+    else:
+        print("Opción inválida.")
+    
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
 
 def gestionar_transacciones(accion):
     limpiar_consola()
     print(f"Gestionar Transacciones - {accion}:")
+        
+    if accion == 'Listar':
+        transacciones.listar_transacciones();
+    elif accion == 'Registrar':
+        transacciones.listar_transacciones();
+    elif accion == 'Eliminar':
+        transacciones.listar_transacciones();
+    elif accion == 'Editar':
+        transacciones.listar_transacciones();
+    elif accion == 'Cambiar Estado':
+        transacciones.listar_transacciones();
+    else:
+        print("Opción inválida.")
+        
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
 
 def gestionar_mantenimientos(accion):
     limpiar_consola()
     print(f"Gestionar Mantenimientos - {accion}:")
+    if accion == 'Listar':
+        mantenimientos.listar_mantenimientos();
+    elif accion == 'Registrar':
+        mantenimientos.listar_mantenimientos();
+    elif accion == 'Eliminar':
+        mantenimientos.listar_mantenimientos();
+    elif accion == 'Editar':
+        mantenimientos.listar_mantenimientos();
+    elif accion == 'Cambiar Estado':
+        mantenimientos.listar_mantenimientos();
+    else:
+        print("Opción inválida.")
+    
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
                 #--------  FIN - REALIZAR ACCIONES--------#
     
