@@ -1,7 +1,7 @@
-from funciones import clientes
-from funciones import vehiculos
-from funciones import transacciones
 import os
+from funciones.entidades import clientes
+from funciones.entidades import vehiculos
+from funciones.entidades import transacciones
 
 
 
@@ -12,9 +12,42 @@ def limpiar_consola():
     else:
         os.system('clear')
 #----------FIN FUNCIONES CONSOLA---------------#
+def crear_menu_principal(titulo,opciones, valores):
+    while True:
+        if not isinstance(opciones, list) or not opciones:
+            print("Las opciones deben ser una lista no vacía.")
+            return
+        if not isinstance(valores, list) or not valores:
+            print("Los valores deben ser una lista no vacía.")
+            return
+        
+        limpiar_consola()
+        print(titulo)
+        for num_op in range(len(opciones)):
+            print(f"{num_op + 1}. {opciones[num_op]}")
+        print(f"{len(opciones) + 1}. Salir")    
+        seleccion = input("Seleccione una opción: ")
 
-
-
+        try:
+            seleccion = int(seleccion)
+            if 1 <= seleccion <= len(valores):
+                valor=valores[seleccion-1]
+                nombre_funcion = "menu_" + valor
+                print(nombre_funcion)
+                input("boton")
+                if nombre_funcion:
+                    print("")
+                    # nombre_funcion()
+                else:
+                    print("La función no existe. Intente de nuevo.")
+            elif seleccion == len(opciones) + 1:
+                break
+            else:
+                print("Selección no válida. Intente de nuevo.")
+        except ValueError:
+            print("Por favor, ingrese un número válido.")
+    
+    
 #-------------------------------INICIO FUNCIONES AUX DE MENUs-----------------------------------#
 def menu_principal():
     while True:
@@ -61,7 +94,7 @@ def menu_vehiculos():
         elif opcion == '4':
             gestionar_vehiculos('Eliminar')
         elif opcion == '5':
-            gestionar_vehiculos('Cambiar Estado')
+            gestionar_vehiculos('Estado')
         elif opcion == '6':
             break
         else:
@@ -128,13 +161,13 @@ def gestionar_vehiculos(accion):
     if accion == 'Listar':
         vehiculos.listar_vehiculos();
     elif accion == 'Registrar':
-        vehiculos.listar_vehiculos();
+        vehiculos.registrar_vehiculos();
     elif accion == 'Eliminar':
-        vehiculos.listar_vehiculos();
+        vehiculos.eliminar_vehiculos();
     elif accion == 'Editar':
-        vehiculos.listar_vehiculos();
-    elif accion == 'Cambiar Estado':
-        vehiculos.listar_vehiculos();
+        vehiculos.editar_vehiculos();
+    elif accion == 'Estado':
+        vehiculos.estado_vehiculos();
     else:
         print("Opción inválida.")
         
@@ -149,13 +182,11 @@ def gestionar_clientes(accion):
     if accion == 'Listar':
         clientes.listar_clientes();
     elif accion == 'Registrar':
-        clientes.listar_clientes();
+        clientes.registrar_clientes();
     elif accion == 'Eliminar':
-        clientes.listar_clientes();
+        clientes.elimnar_clientes();
     elif accion == 'Editar':
-        clientes.listar_clientes();
-    elif accion == 'Cambiar Estado':
-        clientes.listar_clientes();
+        clientes.editar_clientes();
     else:
         print("Opción inválida.")
     
@@ -171,13 +202,7 @@ def gestionar_transacciones(accion):
     if accion == 'Listar':
         transacciones.listar_transacciones();
     elif accion == 'Registrar':
-        transacciones.listar_transacciones();
-    elif accion == 'Eliminar':
-        transacciones.listar_transacciones();
-    elif accion == 'Editar':
-        transacciones.listar_transacciones();
-    elif accion == 'Cambiar Estado':
-        transacciones.listar_transacciones();
+        transacciones.registrar_transacciones();
     else:
         print("Opción inválida.")
         
