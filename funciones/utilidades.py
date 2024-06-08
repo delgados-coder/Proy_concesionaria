@@ -1,9 +1,9 @@
 from funciones import clientes
-from funciones import autos
-from funciones import mantenimientos
+from funciones import vehiculos
 from funciones import transacciones
-
 import os
+
+
 
 #---------INICIO FUNCIONES CONSOLA------------#
 def limpiar_consola():
@@ -13,27 +13,26 @@ def limpiar_consola():
         os.system('clear')
 #----------FIN FUNCIONES CONSOLA---------------#
 
+
+
 #-------------------------------INICIO FUNCIONES AUX DE MENUs-----------------------------------#
 def menu_principal():
     while True:
         limpiar_consola()
         print("Menú Principal:")
-        print("1. Gestionar Autos")
+        print("1. Gestionar Vehiculos")
         print("2. Gestionar Clientes")
         print("3. Gestionar Transacciones")
-        print("4. Gestionar Mantenimientos")
-        print("5. Salir")
+        print("4. Salir")
         opcion = input("Seleccione una opción: ")
 
         if opcion == '1':
-            menu_autos()
+            menu_vehiculos()
         elif opcion == '2':
             menu_clientes()
         elif opcion == '3':
             menu_transacciones()
         elif opcion == '4':
-            menu_mantenimientos()
-        elif opcion == '5':
             break
         else:
             print("Opción inválida. Por favor, seleccione una opción válida.")
@@ -41,28 +40,28 @@ def menu_principal():
 
 
             #------SUBMENU------#
-def menu_autos():
+def menu_vehiculos():
     while True:
         limpiar_consola()
-        print("Menú Autos:")
-        print("1. Listar Autos")
-        print("2. Registrar Auto")
-        print("3. Editar Auto")
-        print("4. Eliminar Auto")
-        print("5. Cambiar Estado de Auto")
+        print("Menú Vehiculos:")
+        print("1. Listar Vehiculos")
+        print("2. Registrar Vehiculo")
+        print("3. Editar Vehiculo")
+        print("4. Eliminar Vehiculo")
+        print("5. Cambiar Estado de Vehiculo")
         print("6. Volver al Menú Principal")
         opcion = input("Seleccione una opción: ")
 
         if opcion == '1':
-            gestionar_autos('Listar')
+            gestionar_vehiculos('Listar')
         elif opcion == '2':
-            gestionar_autos('Registrar')
+            gestionar_vehiculos('Registrar')
         elif opcion == '3':
-            gestionar_autos('Editar')
+            gestionar_vehiculos('Editar')
         elif opcion == '4':
-            gestionar_autos('Eliminar')
+            gestionar_vehiculos('Eliminar')
         elif opcion == '5':
-            gestionar_autos('Cambiar Estado')
+            gestionar_vehiculos('Cambiar Estado')
         elif opcion == '6':
             break
         else:
@@ -120,45 +119,28 @@ def menu_transacciones():
 
 
 
-            #------SUBMENU------#
-def menu_mantenimientos():
-    while True:
-        limpiar_consola()
-        print("Menú Mantenimientos:")
-        print("1. Listar Mantenimientos")
-        print("2. Registrar Mantenimiento")
-        print("3. Volver al Menú Principal")
-        opcion = input("Seleccione una opción: ")
-
-        if opcion == '1':
-            gestionar_mantenimientos('Listar')
-        elif opcion == '2':
-            gestionar_mantenimientos('Registrar')
-        elif opcion == '3':
-            break
-        else:
-            print("Opción inválida. Por favor, seleccione una opción válida.")
-
 
             #--------INICIAR - REALIZAR ACCIONES--------#
-def gestionar_autos(accion):
+def gestionar_vehiculos(accion):
     limpiar_consola()
-    print(f"Gestionar Autos - {accion}:")
+    print(f"Gestionar Vehiculos - {accion}:")
     
     if accion == 'Listar':
-        autos.listar_autos();
+        vehiculos.listar_vehiculos();
     elif accion == 'Registrar':
-        autos.listar_autos();
+        vehiculos.listar_vehiculos();
     elif accion == 'Eliminar':
-        autos.listar_autos();
+        vehiculos.listar_vehiculos();
     elif accion == 'Editar':
-        autos.listar_autos();
+        vehiculos.listar_vehiculos();
     elif accion == 'Cambiar Estado':
-        autos.listar_autos();
+        vehiculos.listar_vehiculos();
     else:
         print("Opción inválida.")
         
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
+
+
 
 
 def gestionar_clientes(accion):
@@ -179,6 +161,9 @@ def gestionar_clientes(accion):
     
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
 
+
+
+
 def gestionar_transacciones(accion):
     limpiar_consola()
     print(f"Gestionar Transacciones - {accion}:")
@@ -196,24 +181,6 @@ def gestionar_transacciones(accion):
     else:
         print("Opción inválida.")
         
-    input("...PRESIONE UNA TECLA PARA CONTINUAR...")
-
-def gestionar_mantenimientos(accion):
-    limpiar_consola()
-    print(f"Gestionar Mantenimientos - {accion}:")
-    if accion == 'Listar':
-        mantenimientos.listar_mantenimientos();
-    elif accion == 'Registrar':
-        mantenimientos.listar_mantenimientos();
-    elif accion == 'Eliminar':
-        mantenimientos.listar_mantenimientos();
-    elif accion == 'Editar':
-        mantenimientos.listar_mantenimientos();
-    elif accion == 'Cambiar Estado':
-        mantenimientos.listar_mantenimientos();
-    else:
-        print("Opción inválida.")
-    
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
                 #--------  FIN - REALIZAR ACCIONES--------#
     

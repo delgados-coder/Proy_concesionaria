@@ -1,50 +1,20 @@
 [
     {
-        "id_cliente": 3,
-        "nombre": "Luis",
-        "apellido": "Martinez",
-        "direccion": "Av. Libertador 555",
-        "telefono": "555666777",
-        "correo_electronico": "luis.martinez@example.com"
+        "id_cliente": 1,
+        "nombre": "Juan",
+        "apellido": "Pérez",
+        "documento": "12345678",
+        "direccion": "Calle Falsa 123",
+        "telefono": "123-4567",
+        "correo_electronico": "juan.perez@example.com"
     },
     {
-        "id_cliente": 4,
-        "nombre": "Ana",
-        "apellido": "Rodriguez",
-        "direccion": "Calle Principal 321",
-        "telefono": "333444555",
-        "correo_electronico": "ana.rodriguez@example.com"
-    },
-    {
-        "id_cliente": 5,
-        "nombre": "Pedro",
-        "apellido": "Gonzalez",
-        "direccion": "Carrera 10 #20-30",
-        "telefono": "777888999",
-        "correo_electronico": "pedro.gonzalez@example.com"
-    },
-    {
-        "id_cliente": 6,
-        "nombre": "Laura",
-        "apellido": "Diaz",
-        "direccion": "Diagonal 5 #15-25",
-        "telefono": "111222333",
-        "correo_electronico": "laura.diaz@example.com"
-    },
-    {
-        "id_cliente": 7,
-        "nombre": "Carlos",
-        "apellido": "Lopez",
-        "direccion": "Calle 50 #30-40",
-        "telefono": "999888777",
-        "correo_electronico": "carlos.lopez@example.com"
-    },
-    {
-        "id_cliente": 8,
-        "nombre": "Sofia",
-        "apellido": "Hernandez",
-        "direccion": "Avenida Sur 123",
-        "telefono": "444555666",
-        "correo_electronico": "sofia.hernandez@example.com"
+        "id_cliente": 2,
+        "nombre": "María",
+        "apellido": "Gómez",
+        "documento": "87654321",
+        "direccion": "Avenida Siempreviva 742",
+        "telefono": "987-6543",
+        "correo_electronico": "maria.gomez@example.com"
     }
 ]
