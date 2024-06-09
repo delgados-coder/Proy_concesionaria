@@ -2,9 +2,10 @@ from backend.funciones.entidades import common
 print("--CLIENTES.PY cargado con exito")
 
 def listar_clientes():
-    print(common.listar_tabla_json("clientes"))
-    print("-----------------------------------------------------------------------------------")
-    print("-----------------------------------------------------------------------------------")
+    return (common.listar_tabla_json("clientes"))
+    # print(common.listar_tabla_json("clientes"))
+    # print("-----------------------------------------------------------------------------------")
+    # print("-----------------------------------------------------------------------------------")
     
 
     #print(common.listar_tabla_json("clientes","documento",True))
@@ -15,10 +16,7 @@ def listar_clientes():
     
     #print(common.listar_tabla_json("clientes",filtros_aplicados={"nombre": "Pedro"}))
     #OBTENER LISTA CON FILTRO DE nombre = Pedro
-    
-def listar_clientes():
-    print(common.listar_tabla_json("clientes"))
-
+   
 def registrar_clientes():
     print("registrar_clientes()")
 
