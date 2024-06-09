@@ -1,4 +1,4 @@
-from funciones.entidades import common 
+from backend.funciones.entidades import common 
 
 print("--vehiculos.PY cargado con exito")
 

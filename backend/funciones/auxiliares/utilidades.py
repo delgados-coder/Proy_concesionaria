@@ -1,7 +1,7 @@
 import os
-from funciones.entidades import clientes
-from funciones.entidades import vehiculos
-from funciones.entidades import transacciones
+from backend.funciones.entidades import clientes
+from backend.funciones.entidades import vehiculos
+from backend.funciones.entidades import transacciones
 
 
 
