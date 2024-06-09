@@ -1,6 +1,9 @@
 from funciones.auxiliares import utilidades
 
-utilidades.menu_principal()
+# utilidades.menu_principal() #(version antigua quedo obsoleta) ahora se utiliza un menu dinamico.. hace mas eficaz el codigo
 
-# utilidades.crear_menu_principal("Menu Pricipal",["Gestion Clientes","Gestion Vehiculos","Gestion Transacciones"],["clientes","vehiculos","transacciones"])
+titulo='Menu Principal'
+opciones=["Gestion Clientes","Gestion Vehiculos","Gestion Transacciones"]
+funciones=["menu_clientes","menu_vehiculos","menu_transacciones"]
+utilidades.crear_menu(titulo,opciones,funciones)
 
