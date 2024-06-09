@@ -1,8 +1,7 @@
+*.pyc
 /backend/test.py
 /backend/funciones/entidades/__pycache__
 /backend/funciones/auxiliares/__pycache__
-
 /backend/funciones/__pycache__
-*.pyc
 /funciones/__pycache__
-*.pyc
+
