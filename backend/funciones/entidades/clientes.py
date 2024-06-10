@@ -1,12 +1,11 @@
 from backend.funciones.entidades import common 
-print("--CLIENTES.PY cargado con exito")
 
 def listar_clientes():
-    return (common.listar_tabla_json("clientes"))
-    # print(common.listar_tabla_json("clientes"))
-    # print("-----------------------------------------------------------------------------------")
-    # print("-----------------------------------------------------------------------------------")
-    
+    return (common.listar_tabla_json('clientes', orden_por=None, orden_ascendente=True, filtros_aplicados=None))
+
+def listar_clientes_serie():
+    return (common.listar_serie_json('clientes', orden_por=None, orden_ascendente=True, filtros_aplicados=None))
+  
 
     #print(common.listar_tabla_json("clientes","documento",True))
     #TODA LA LISTA POR ORD POR col -DOCUMENTO- forma -ASCENDENTE-

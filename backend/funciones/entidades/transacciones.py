@@ -1,5 +1,5 @@
 from backend.funciones.entidades import common 
-print("--TRANSACCIONES.PY cargado con exito")
+
     
     
 def listar_transacciones():

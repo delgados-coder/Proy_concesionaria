@@ -1,32 +1,36 @@
+from utils import funciones as front_funciones
+from utils import acciones as back_acciones
+
+from backend.funciones.entidades import common
 from backend.funciones.entidades import clientes
 from backend.funciones.entidades import vehiculos
 from backend.funciones.entidades import transacciones
 
 from tkinter import Tk
+from tkinter import ttk
 from tkinter import *
 
 
 def cargar_boton(path):
         return PhotoImage(file=path)
-
-
 buttons_path={
     "button1":"./assets/btns/btn_clientes.png",
     "button2":"./assets/btns/btn_vehiculos.png",
     "button3":"./assets/btns/btn_transacciones.png"
 }
 
+   
+
 
 def main():
     root = Tk()
-
     
     
 
     screen_width= root.winfo_screenwidth()       
     screen_height= root.winfo_screenheight()
-    window_width=screen_width  
-    window_height=screen_height
+    window_width = screen_width-500
+    window_height = screen_height-300
     x_cordinate = int((screen_width/2) - (window_width/2)) 
     y_cordinate = int((screen_height/2) - (window_height/2))               
 
@@ -41,18 +45,42 @@ def main():
     root.iconbitmap(root_path_icon)
     root['bg'] = root_color_base
     
-    btn = cargar_boton(buttons_path["button1"])
     
-    label_button = Label(root,image=btn,border=0)
-    label_button.place(x=100,y=100)
-
+    
+    #--------------| TEST: eliminar un registro | ---------------------#
+    #-boton = Button(root, text="Eliminar Registro...",command=back_acciones.llamar_eliminar_registro_json)
+    #-boton.pack()
+    
+    
+    
+    #--------------| TEST: Crear una tabla | ---------------------#
+    campos = ("id_cliente", "name", "surname", "doc", "dir", "tel", "email")
+    etiquetas = ("ID Cliente", "Nombre", "Apellido", "Documento", "Dirección", "Teléfono", "Correo Electrónico")
+    tabla_clientes = front_funciones.front_crear_tabla(root, campos, etiquetas)
+        
+    #--------------| TEST: Obtener Registros y Rellenar la 'Tabla_Clientes" | ---------------------#
+    registros = back_acciones.llamar_listar_tabla_json() #carga los registros
+    front_funciones.front_rellenar_tabla(tabla_clientes,registros) #rellena la tabla
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     root.mainloop()
+    
 if __name__ == "__main__":
     main()
     
     
-input("CONTINUAR..............")
-datos = clientes.listar_clientes()
-print(datos)
-    
+
