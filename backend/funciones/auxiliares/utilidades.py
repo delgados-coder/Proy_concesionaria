@@ -4,7 +4,6 @@ from backend.funciones.entidades import vehiculos
 from backend.funciones.entidades import transacciones
 
 
-
 #---------INICIO FUNCIONES CONSOLA------------#
 def limpiar_consola():
     if os.name == 'nt':

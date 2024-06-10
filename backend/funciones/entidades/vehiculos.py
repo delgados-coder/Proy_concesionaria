@@ -1,6 +1,5 @@
 from backend.funciones.entidades import common 
 
-print("--vehiculos.PY cargado con exito")
 
     
 def listar_vehiculos():
