@@ -1,19 +1,13 @@
-from backend.funciones.entidades import common, clientes, vehiculos, transacciones
+#Funciones usadas por el Front para llamar al Back
+
+from backend.funciones.entidades import cliente, common, transaccion, vehiculo
 
 
-def llamar_listar_tabla_json():
-    nombre_json = "clientes"
+def llamar_listar_tabla_json(nombre_json):
     return common.listar_tabla_json(nombre_json)
     
-    
-    
-def llamar_eliminar_registro_json():
-    nombre_json = "clientes"  
-    filtro = {"id_cliente": 4}
+def llamar_eliminar_registro_json(nombre_json,filtro):
     common.eliminar_registro_json(nombre_json, filtro)
    
-    
-    #todos_los_registros = clientes.listar_clientes_serie()
-    # rellenar_treeview(tabla_clientes, todos_los_registros)
-    
+ 
     

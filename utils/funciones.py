@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
+#------------| FUNCIONES FRONT PARA CREAR (ventana, formulario, tabla)|----------------#
 def front_crear_ventana_hija(ventana_padre,nombre_de_ventana):
     ventana_hija = tk.Toplevel(ventana_padre)
     ventana_hija.title(nombre_de_ventana)
@@ -20,7 +21,23 @@ def front_crear_tabla(ventana_padre, nombres_de_campos, nombres_de_campos_a_most
 # tabla_clientes = front_crear_tabla(root, campos, etiquetas)
 
 
-def front_rellenar_tabla(tabla_a_rellenar, datos_a_utilizar,):
+def crear_formulario(ventana_padre,nombre_form, campos):
+
+    valores_campos = {}
+
+    for i, campo in enumerate(campos):
+        label = ttk.Label(ventana_padre, text=campo)
+        label.grid(row=i, column=0, padx=10, pady=5)
+
+        entry = ttk.Entry(ventana_padre)
+        entry.grid(row=i, column=1, padx=10, pady=5)
+
+        valores_campos[campo] = entry
+
+
+
+#------------| FUNCIONES FRONT PARA rellenar tablas con datos desde el backend|----------------#
+def front_rellenar_tabla(tabla_a_rellenar, datos_a_utilizar):
     for _, registro in datos_a_utilizar.iterrows():
         tabla_a_rellenar.insert('', 'end', values=registro.tolist())
        
@@ -28,3 +45,7 @@ def front_rellenar_tabla(tabla_a_rellenar, datos_a_utilizar,):
 def front_rellenar_tabla_serie(tabla_a_rellenar, datos_a_utilizar):
     for index, registro in datos_a_utilizar.iteritems():
         tabla_a_rellenar.insert('', 'end', values=registro)
+        
+        
+
+

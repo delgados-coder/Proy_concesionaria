@@ -1,7 +1,7 @@
 import os
-from backend.funciones.entidades import clientes
-from backend.funciones.entidades import vehiculos
-from backend.funciones.entidades import transacciones
+from backend.funciones.entidades import cliente
+from backend.funciones.entidades import vehiculo
+from backend.funciones.entidades import transaccion
 
 
 #---------INICIO FUNCIONES CONSOLA------------#
@@ -75,67 +75,67 @@ def menu_transacciones():
 
 #----------|opciones para Entidad Vehiculos|-------------#
 def gestionar_vehiculos_listar():
-    vehiculos.listar_vehiculos()
+    vehiculo.listar_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_vehiculos_registrar():
-    vehiculos.registrar_vehiculos()
+    vehiculo.registrar_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_vehiculos_editar():
-    vehiculos.editar_vehiculos()
+    vehiculo.editar_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_vehiculos_eliminar():
-    vehiculos.eliminar_vehiculos()
+    vehiculo.eliminar_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_vehiculos_estado():
-    vehiculos.estado_vehiculos()
+    vehiculo.estado_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
 #----------------------------------------------------------#
 
 #----------|opciones para Entidad Clientes|-------------#
 def gestionar_clientes_listar():
-    clientes.listar_clientes()
+    cliente.listar_clientes()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_clientes_registrar():
-    clientes.registrar_clientes()
+    cliente.registrar_clientes()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_clientes_editar():
-    clientes.editar_clientes()
+    cliente.editar_clientes()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_clientes_eliminar():
-    clientes.eliminar_clientes()
+    cliente.eliminar_clientes()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_clientes_estado():
-    clientes.estado_clientes()
+    cliente.estado_clientes()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
 #----------------------------------------------------------#
 
 #----------|opciones para Entidad Clientes|-------------#
 def gestionar_transacciones_listar():
-    transacciones.listar_transacciones()
+    transaccion.listar_transacciones()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_transacciones_registrar():
-    transacciones.registrar_transacciones()
+    transaccion.registrar_transacciones()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_transacciones_editar():
-    transacciones.editar_transacciones()
+    transaccion.editar_transacciones()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_transacciones_eliminar():
-    transacciones.eliminar_transacciones()
+    transaccion.eliminar_transacciones()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_transacciones_estado():
-    transacciones.estado_transacciones()
+    transaccion.estado_transacciones()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
 #----------------------------------------------------------#
 

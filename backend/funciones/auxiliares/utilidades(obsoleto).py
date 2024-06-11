@@ -1,7 +1,7 @@
 import os
-from funciones.entidades import clientes
-from funciones.entidades import vehiculos
-from funciones.entidades import transacciones
+from backend.funciones.entidades import cliente
+from backend.funciones.entidades import vehiculo
+from backend.funciones.entidades import transaccion
 
 
 
@@ -140,23 +140,23 @@ def menu_clientes():#---------------| MENU ANTIGUO(primeras versiones)...ahora s
 
 
 def gestionar_vehiculos_listar():
-    vehiculos.listar_vehiculos()
+    vehiculo.listar_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_vehiculos_registrar():
-    vehiculos.registrar_vehiculos()
+    vehiculo.registrar_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_vehiculos_editar():
-    vehiculos.editar_vehiculos()
+    vehiculo.editar_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_vehiculos_eliminar():
-    vehiculos.eliminar_vehiculos()
+    vehiculo.eliminar_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
     #--------------------------#
 def gestionar_vehiculos_estado():
-    vehiculos.estado_vehiculos()
+    vehiculo.estado_vehiculos()
     input("...PRESIONE UNA TECLA PARA CONTINUAR...")
 
 
@@ -187,15 +187,15 @@ def gestionar_vehiculos(accion):
     print(f"Gestionar Vehiculos - {accion}:")
     
     if accion == 'Listar':
-        vehiculos.listar_vehiculos();
+        vehiculo.listar_vehiculos();
     elif accion == 'Registrar':
-        vehiculos.registrar_vehiculos();
+        vehiculo.registrar_vehiculos();
     elif accion == 'Eliminar':
-        vehiculos.eliminar_vehiculos();
+        vehiculo.eliminar_vehiculos();
     elif accion == 'Editar':
-        vehiculos.editar_vehiculos();
+        vehiculo.editar_vehiculos();
     elif accion == 'Estado':
-        vehiculos.estado_vehiculos();
+        vehiculo.estado_vehiculos();
     else:
         print("Opción inválida.")
         
@@ -206,13 +206,13 @@ def gestionar_clientes(accion):
     limpiar_consola()
     print(f"Gestionar Clientes - {accion}:")
     if accion == 'Listar':
-        clientes.listar_clientes();
+        cliente.listar_clientes();
     elif accion == 'Registrar':
-        clientes.registrar_clientes();
+        cliente.registrar_clientes();
     elif accion == 'Eliminar':
-        clientes.elimnar_clientes();
+        cliente.elimnar_clientes();
     elif accion == 'Editar':
-        clientes.editar_clientes();
+        cliente.editar_clientes();
     else:
         print("Opción inválida.")
     
@@ -226,9 +226,9 @@ def gestionar_transacciones(accion):
     print(f"Gestionar Transacciones - {accion}:")
         
     if accion == 'Listar':
-        transacciones.listar_transacciones();
+        transaccion.listar_transacciones();
     elif accion == 'Registrar':
-        transacciones.registrar_transacciones();
+        transaccion.registrar_transacciones();
     else:
         print("Opción inválida.")
         
