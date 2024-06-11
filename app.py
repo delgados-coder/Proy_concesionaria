@@ -1,10 +1,7 @@
 from utils import funciones as front_funciones
 from utils import acciones as back_acciones
 
-from backend.funciones.entidades import common
-from backend.funciones.entidades import clientes
-from backend.funciones.entidades import vehiculos
-from backend.funciones.entidades import transacciones
+from backend.funciones.entidades import cliente, common, transaccion, vehiculo
 
 from tkinter import Tk
 from tkinter import ttk
@@ -18,8 +15,6 @@ buttons_path={
     "button2":"./assets/btns/btn_vehiculos.png",
     "button3":"./assets/btns/btn_transacciones.png"
 }
-
-   
 
 
 def main():
@@ -47,24 +42,32 @@ def main():
     
     
     
-    #--------------| TEST: eliminar un registro | ---------------------#
-    #-boton = Button(root, text="Eliminar Registro...",command=back_acciones.llamar_eliminar_registro_json)
-    #-boton.pack()
+    #--------------| TEST: crear boton al hacer click eliminar un registro | ---------------------#
+    #nombre_json="clientes"
+    #filtro={"id_cliente": 2}
+    #boton = Button(root, text="Eliminar Registro...",command=lambda: back_acciones.llamar_eliminar_registro_json(nombre_json,filtro))
+    #boton.pack()
     
     
     
     #--------------| TEST: Crear una tabla | ---------------------#
-    campos = ("id_cliente", "name", "surname", "doc", "dir", "tel", "email")
-    etiquetas = ("ID Cliente", "Nombre", "Apellido", "Documento", "Dirección", "Teléfono", "Correo Electrónico")
-    tabla_clientes = front_funciones.front_crear_tabla(root, campos, etiquetas)
+    # campos = ("id_cliente", "name", "surname", "doc", "dir", "tel", "email")
+    # etiquetas = ("ID Cliente", "Nombre", "Apellido", "Documento", "Dirección", "Teléfono", "Correo Electrónico")
+    # tabla_clientes = front_funciones.front_crear_tabla(root, campos, etiquetas)
+    
         
     #--------------| TEST: Obtener Registros y Rellenar la 'Tabla_Clientes" | ---------------------#
-    registros = back_acciones.llamar_listar_tabla_json() #carga los registros
-    front_funciones.front_rellenar_tabla(tabla_clientes,registros) #rellena la tabla
+    # registros = back_acciones.llamar_listar_tabla_json() #carga los registros
+    # front_funciones.front_rellenar_tabla(tabla_clientes,registros) #rellena la tabla
     
     
     
+    #--------------| TEST: Crear un Formulario |---------------------#
+    #nombre_form = "Formulario de Ejemplo"
+    #campos = ["ID_cliente","Nombre","Apellido","Documento","Direccion","Telefono","Correo Electronico"]
+    #front_funciones.crear_formulario(root,nombre_form, campos)
     
+           
     
     
     

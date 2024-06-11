@@ -8,8 +8,6 @@ from tkinter import *
 def main():
     root = Tk()
     
-    
-
     screen_width= root.winfo_screenwidth()       
     screen_height= root.winfo_screenheight()
     window_width = screen_width  
