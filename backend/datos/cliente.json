@@ -5,17 +5,17 @@
         "apellido":"Encoder",
         "documento":12745381,
         "direccion":"mirter@gmail.com",
-        "telefono":"3812545256",
+        "telefono":3812545256,
         "correo_electronico":"example@gmail.com"
     },
     {
         "id_cliente":1,
-        "nombre":"Juan",
-        "apellido":"Perez",
-        "documento":12345678,
-        "direccion":"Calle Falsa 123",
-        "telefono":"123-4567",
-        "correo_electronico":"juan.perez@example.com"
+        "nombre":"Fatum",
+        "apellido":"Encoder",
+        "documento":12745381,
+        "direccion":"mirter@gmail.com",
+        "telefono":3812545256,
+        "correo_electronico":"example@gmail.com"
     },
     {
         "id_cliente":2,
@@ -23,26 +23,26 @@
         "apellido":"Encoder",
         "documento":12745381,
         "direccion":"mirter@gmail.com",
-        "telefono":"3812545256",
+        "telefono":3812545256,
         "correo_electronico":"example@gmail.com"
     },
     {
         "id_cliente":3,
-        "nombre":"Pedro",
-        "apellido":"Fernandez",
-        "documento":33987654,
-        "direccion":"San Mart\u00edn 789",
-        "telefono":"34167890123",
-        "correo_electronico":"pedro.fernandez7980@yahoo.com"
+        "nombre":"Fatum",
+        "apellido":"Encoder",
+        "documento":12745381,
+        "direccion":"mirter@gmail.com",
+        "telefono":3812545256,
+        "correo_electronico":"example@gmail.com"
     },
     {
         "id_cliente":4,
-        "nombre":"Ana",
-        "apellido":"Lopez",
-        "documento":25876543,
-        "direccion":"Belgrano 1820",
-        "telefono":"26178904281",
-        "correo_electronico":"ana.lopez1802@gmail.com"
+        "nombre":"Fatum",
+        "apellido":"Encoder",
+        "documento":12745381,
+        "direccion":"mirter@gmail.com",
+        "telefono":"3812545256",
+        "correo_electronico":"example@gmail.com"
     },
     {
         "id_cliente":5,
@@ -50,7 +50,7 @@
         "apellido":"Encoder",
         "documento":12745381,
         "direccion":"mirter@gmail.com",
-        "telefono":"3812545256",
+        "telefono":3812545256,
         "correo_electronico":"example@gmail.com"
     }
 ]

@@ -1,7 +1,5 @@
 import os
-from backend.funciones.entidades import cliente
-from backend.funciones.entidades import vehiculo
-from backend.funciones.entidades import transaccion
+from backend.funciones import api
 
 
 #---------INICIO FUNCIONES CONSOLA------------#
