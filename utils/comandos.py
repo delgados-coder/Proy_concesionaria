@@ -18,6 +18,7 @@ def btn_inicio_click():
     
     
 def btn_clientes_click(padre):
+    config.pestaña_actual='cliente'
     entidad='cliente'
     campos = ("id_cliente", "nombre", "apellido", "documento", "direccion", "telefono", "correo_electronico")
     etiquetas = ("ID Cliente", "Nombre", "Apellido", "Documento", "Dirección", "Teléfono", "Correo Electrónico")
@@ -26,6 +27,7 @@ def btn_clientes_click(padre):
     aux.rellenar_tabla(main_tabla_registros,registros)
     
 def btn_vehiculos_click(padre):
+    config.pestaña_actual='vehiculo'
     entidad='vehiculo'
     campos = ("id_vehiculo","dominio","marca","modelo","anio","kilometraje","precio_compra","precio_venta","estado")
     etiquetas = ("ID vehiculo","Dominio","Marca","Modelo","Año","Kilometraje","Precio de Compra","Precio de Venta","Estado")
@@ -35,6 +37,7 @@ def btn_vehiculos_click(padre):
     
     
 def btn_transacciones_click(padre):
+    config.pestaña_actual='transaccion'
     entidad='transaccion'
     campos = ("id_transaccion","id_vehiculo","id_cliente","tipo_transaccion","fecha","monto","observaciones")
     etiquetas = ("ID Transaccion","ID Vehiculo","ID Cliente","Tipo de Transaccion","Fecha","Monto","Observaciones")
@@ -76,6 +79,10 @@ def callback_clic_sec_cabecera(entidad, tabla, campo):
     
     
 def callback_clic_registro(entidad,registro):
-    print("Registro seleccionado:", registro)
-    return registro
+    config.registro_seleccionado_entidad=entidad
+    config.registro_seleccionado_datos=registro
+    print("Registro seleccionado:", config.pestaña_actual)
+    print("Registro seleccionado:", config.registro_seleccionado_entidad)
+    print("Registro seleccionado:", config.registro_seleccionado_datos)
+    
     
