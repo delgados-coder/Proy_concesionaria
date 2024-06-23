@@ -42,6 +42,33 @@ def main():
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     #--------------| TEST: crear boton al hacer click eliminar un registro | ---------------------#
     #nombre_json="clientes"
     #filtro={"id_cliente": 2}
