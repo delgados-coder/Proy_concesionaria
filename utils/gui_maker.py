@@ -1,33 +1,33 @@
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
-from backend.funciones import api
 from pathlib import Path
-import tkinter as tk
 
 OUTPUT_PATH = Path(__file__).parent
 OUTPUT_PATH_UP_ONE = OUTPUT_PATH.parent
-ASSETS_PATH = OUTPUT_PATH_UP_ONE / Path(r".\assets\frame")
+ASSETS_PATH = OUTPUT_PATH_UP_ONE / Path(r".\recursos\imagenes")
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
 #|---------------|funciones - Ventana PRINCIPAL|--------------------#
-def crear_ventana_principal(nombre_ventana,ancho_ventana,alto_ventana,titulo_ventana,icon_path,color_base):
-    nombre_ventana = Tk()
-    screen_width = nombre_ventana.winfo_screenwidth()       
-    screen_height = nombre_ventana.winfo_screenheight()
+def crear_ventana_principal(ancho_ventana=100,alto_ventana=100,titulo_ventana="default",icon_path=None,color_base="green"):
+    window_root = Tk()
+    screen_width = window_root.winfo_screenwidth()       
+    screen_height = window_root.winfo_screenheight()
     window_width = ancho_ventana  
     window_height = alto_ventana
     x_cordinate = int((screen_width / 2) - (window_width / 2)) 
     y_cordinate = int((screen_height / 2) - (window_height / 2)) 
         
-    nombre_ventana.title(titulo_ventana)
-    nombre_ventana.iconbitmap(icon_path)
-    nombre_ventana.geometry("{}x{}+{}+{}".format(window_width, window_height, x_cordinate, y_cordinate))
-    nombre_ventana.configure(background=color_base)    
-#|---------------|funciones - Ventana PRINCIPAL|--------------------#
+    window_root.title(titulo_ventana)
+    window_root.iconbitmap(icon_path)
+    window_root.geometry("{}x{}+{}+{}".format(window_width, window_height, x_cordinate, y_cordinate))
+    window_root.configure(background=color_base)
+    window_root.resizable(False, False)
+    return window_root    
+#|---------------|funciones - Ventana PRINCIPAl|--------------------#
 
 
 #|---------------|funciones - lienzo canvas|--------------------#
-def crear_lienzo_canvas(ventana_padre,ancho,alto,bg_color="red"):
+def crear_lienzo_canvas(ventana_padre,ancho,alto,bg_color="#d5b59c"):
     frame_canvas = Canvas(
     ventana_padre,
     bg = bg_color,
@@ -45,7 +45,7 @@ def posicionar_canva_fondo(canvas_frame,pos_x=0,pos_y=0):
 
 #|---------------|Funciones de imagenes|--------------------#
 def crear_imagen(canvas_frame,nombre_imagen,pos_centro_x=0,pos_centro_y=0):
-    cargar_imagen = PhotoImage(file=relative_to_assets(nombre_imagen+".png"))
+    cargar_imagen = PhotoImage(file=relative_to_assets(nombre_imagen))
     medida1=pos_centro_x
     medida2=pos_centro_y
     cargar_imagen.image = cargar_imagen
@@ -57,10 +57,11 @@ def crear_rectangulo(canvas_frame,pos_x=0,pos_y=0,ancho=10,alto=10,fondo="green"
     canvas_frame.create_rectangle(pos_x,pos_y,pos_x+ancho,pos_y+alto,fill=fondo,outline="")
 #|---------------|Funciones de rectangulos|--------------------#
 
-#|---------------|Funciones de BOTONES|--------------------#
-def crear_boton(nombre_boton):
-    btn_image = PhotoImage(file=relative_to_assets(nombre_boton+".png"))
+#|---------------|Funciones de BOTONED|--------------------#
+def crear_boton(ventana_padre,nombre_boton):
+    btn_image = PhotoImage(file=relative_to_assets(nombre_boton))
     btn_name = Button(
+     ventana_padre,
      cursor="hand2",
      image=btn_image,
      borderwidth=0,
@@ -77,7 +78,7 @@ def posicionar_boton(boton,pos_x=0,pos_y=0,ancho=None,alto=None):
         width=ancho,
         height=alto
     )
-#|---------------|Funciones de BOTONES|--------------------#
+#|---------------|Funciones de BOTONED|--------------------#
 
 #|---------------|Funciones de Textos|--------------------#
 def crear_texto(canvas_frame,texto="default",pos_x=0,pos_y=0,color_fuente="blue",size_fuente=10,tipo_fuente="Arial"):
