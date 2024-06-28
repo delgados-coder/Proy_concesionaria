@@ -1,0 +1,233 @@
+[
+    {
+      "id_vehiculo": 1,
+      "patente": "ABQ129",
+      "marca": "Lexus",
+      "modelo": "GX",
+      "anio": 2024,
+      "kilometraje": 4860,
+      "precio_compra": 0,
+      "precio_venta": 111000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 2,
+      "patente": "WXP789",
+      "marca": "Mercedes-Benz",
+      "modelo": "E-Class",
+      "anio": 2013,
+      "kilometraje": 50000,
+      "precio_compra": 97000,
+      "precio_venta": 0,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 3,
+      "patente": "XYZ693",
+      "marca": "Honda",
+      "modelo": "Civic",
+      "anio": 1972,
+      "kilometraje": 80000,
+      "precio_compra": 0,
+      "precio_venta": 24000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 4,
+      "patente": "HJV618",
+      "marca": "Mazda",
+      "modelo": "3",
+      "anio": 2024,
+      "kilometraje": 10000,
+      "precio_compra": 29000,
+      "precio_venta": 0,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 5,
+      "patente": "FDR230",
+      "marca": "Mazda",
+      "modelo": "CX5",
+      "anio": 2023,
+      "kilometraje": 90000,
+      "precio_compra": 14050,
+      "precio_venta": 17000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 6,
+      "patente": "DTB329",
+      "marca": "Lexus",
+      "modelo": "LC",
+      "anio": 2024,
+      "kilometraje": 5000,
+      "precio_compra": 0,
+      "precio_venta": 249000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 7,
+      "patente": "LYH329",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLE",
+      "anio": 2024,
+      "kilometraje": 7850,
+      "precio_compra": 0,
+      "precio_venta": 17000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 8,
+      "patente": "KIP543",
+      "marca": "Honda",
+      "modelo": "CR-V",
+      "anio": 2024,
+      "kilometraje": 7900,
+      "precio_compra": 0,
+      "precio_venta": 60000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 9,
+      "patente": "SMG543",
+      "marca": "Mercedes-Benz",
+      "modelo": "S-Class",
+      "anio": 2023,
+      "kilometraje": 7850,
+      "precio_compra": 0,
+      "precio_venta": 370000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 10,
+      "patente": "UFQ923",
+      "marca": "Citroen",
+      "modelo": "C5",
+      "anio": 2024,
+      "kilometraje": 7850,
+      "precio_compra": 14000,
+      "precio_venta": 17000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 11,
+      "patente": "DGM435",
+      "marca": "Citroen",
+      "modelo": "Berlingo",
+      "anio": 2024,
+      "kilometraje": 5500,
+      "precio_compra": 0,
+      "precio_venta": 22180,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 12,
+      "patente": "DGM635",
+      "marca": "Fiat",
+      "modelo": "Tipo",
+      "anio": 2017,
+      "kilometraje": 7850,
+      "precio_compra": 0,
+      "precio_venta": 17600,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 13,
+      "patente": "DMU628",
+      "marca": "BMW",
+      "modelo": "X5",
+      "anio": 2023,
+      "kilometraje": 9953,
+      "precio_compra": 0,
+      "precio_venta": 209000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 14,
+      "patente": "AIM827",
+      "marca": "BMW",
+      "modelo": "Z4",
+      "anio": 2003,
+      "kilometraje": 9953,
+      "precio_compra": 0,
+      "precio_venta": 99000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 15,
+      "patente": "SYM379",
+      "marca": "BMW",
+      "modelo": "3 Series",
+      "anio": 2004,
+      "kilometraje": 9953,
+      "precio_compra": 0,
+      "precio_venta": 115000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 16,
+      "patente": "CMT779",
+      "marca": "BMW",
+      "modelo": "5 Series",
+      "anio": 2024,
+      "kilometraje": 3053,
+      "precio_compra": 0,
+      "precio_venta": 28500,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 17,
+      "patente": "VMC370",
+      "marca": "Lexus",
+      "modelo": "ES",
+      "anio": 2024,
+      "kilometraje": 3553,
+      "precio_compra": 0,
+      "precio_venta": 37000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 18,
+      "patente": "UFP283",
+      "marca": "Alfa Romeo",
+      "modelo": "Tonale",
+      "anio": 2024,
+      "kilometraje": 5978,
+      "precio_compra": 0,
+      "precio_venta": 39900,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 19,
+      "patente": "YHP827",
+      "marca": "Alfa Romeo",
+      "modelo": "Giulia",
+      "anio": 2015,
+      "kilometraje": 10053,
+      "precio_compra": 0,
+      "precio_venta": 232000,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 20,
+      "patente": "YHP719",
+      "marca": "Alfa Romeo",
+      "modelo": "4C Spider",
+      "anio": 2016,
+      "kilometraje": 4053,
+      "precio_compra": 0,
+      "precio_venta": 58522,
+      "estado": "Reservado"
+    },
+    {
+      "id_vehiculo": 21,
+      "patente": "HI783",
+      "marca": "Lexus",
+      "modelo": "RX",
+      "anio": 2024,
+      "kilometraje": 6053,
+      "precio_compra": 0,
+      "precio_venta": 30000,
+      "estado": "Reservado"
+    }
+  ]

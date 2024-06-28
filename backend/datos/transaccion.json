@@ -1,0 +1,182 @@
+[
+  {
+      "id_transaccion": 1,
+      "id_vehiculo": 3,
+      "id_cliente": 1,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-01-10 17:15",
+      "monto": 24000,
+      "observaciones": "El vehículo fué entregado con el primer tanque lleno de combustible"
+  },
+  {
+      "id_transaccion": 2,
+      "id_vehiculo": 1, 
+      "id_cliente": 3,
+      "tipo_transaccion": "Venta",
+      "fecha": "2024-02-03 11:00",
+      "monto": 111000,
+      "observaciones": "Cliente vende un vehículo usado a la concesionaria"
+  },
+  {
+      "id_transaccion": 3,
+      "id_vehiculo": 4,
+      "id_cliente": 2,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-03-10 08:07",
+      "monto": 27000,
+      "observaciones": "Cliente compra auto usado"
+  },
+  {
+      "id_transaccion": 4,
+      "id_vehiculo": 2,
+      "id_cliente": 4,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-03-20 09:12",
+      "monto": 29000,
+      "observaciones": "Vehículo con mantenimiento gratuito por 1 año"
+  },
+  {
+      "id_transaccion": 5,
+      "id_vehiculo": 7,
+      "id_cliente": 19,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-04-09 16:02",
+      "monto": 17000,
+      "observaciones": "El cliente solicitó instalación de equipo de sonido adicional"
+  },
+  {
+      "id_transaccion": 6,
+      "id_vehiculo": 5,
+      "id_cliente": 11,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-04-12 10:09",
+      "monto": 43000,
+      "observaciones": "El cliente recibió una sesión de entrenamiento sobre el uso del vehículo"
+  },
+  {
+      "id_transaccion": 7,
+      "id_vehiculo": 6,
+      "id_cliente": 7,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-04-17 15:22",
+      "monto": 249900,
+      "observaciones": "Incluye alfombras personalizadas como obsequio."
+  },
+  {
+      "id_transaccion": 8,
+      "id_vehiculo": 9,
+      "id_cliente": 16,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-05-17 19:40",
+      "monto": 370000,
+      "observaciones": "El cliente eligió un color personalizado para el vehículo."
+  },
+  {
+      "id_transaccion": 9,
+      "id_vehiculo": 11,
+      "id_cliente": 5,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-01 13:00",
+      "monto": 22180,
+      "observaciones": "Vehículo equipado con sistema de navegación GPS de última generación"
+  },
+  {
+      "id_transaccion": 10,
+      "id_vehiculo": 13,
+      "id_cliente": 20,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-03 19:53",
+      "monto": 209000,
+      "observaciones": "El cliente recibió un bono de $1000"
+  },
+  {
+      "id_transaccion": 11,
+      "id_vehiculo": 12,
+      "id_cliente": 6,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-05 18:17",
+      "monto": 17600,
+      "observaciones": "Incluye kit de seguridad vial"
+  },
+  {
+      "id_transaccion": 12,
+      "id_vehiculo": 8,
+      "id_cliente": 17,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-09 08:33",
+      "monto": 60000,
+      "observaciones": "El vehiculo tiene asientos de cuero premium"
+  },
+  {
+      "id_transaccion": 13,
+      "id_vehiculo": 15,
+      "id_cliente": 12,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-13 11:50",
+      "monto": 115000,
+      "observaciones": "El cliente recibió una membresía gratuita al club de conductores"
+  },
+  {
+      "id_transaccion": 14,
+      "id_vehiculo": 14,
+      "id_cliente": 18,
+      "tipo_transaccion": "Venta",
+      "fecha": "2024-06-16 15:33",
+      "monto": 99000,
+      "observaciones": "Sin observaciones"
+  },
+  {
+      "id_transaccion": 15,
+      "id_vehiculo": 17,
+      "id_cliente": 9,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-20 09:27",
+      "monto": 37000,
+      "observaciones": "Vehiculo con sistema de asistencia al estacionamiento."
+  },
+  {
+      "id_transaccion": 16,
+      "id_vehiculo": 16,
+      "id_cliente": 14,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-22 01:43",
+      "monto": 28500,
+      "observaciones": "Incluye seguro vehicular por seis meses"
+  },
+  {
+      "id_transaccion": 17,
+      "id_vehiculo": 18,
+      "id_cliente": 8,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-25 02:20",
+      "monto": 39900,
+      "observaciones": "Cliente recibió un set de herramientas como obsequio."
+  },
+  {
+      "id_transaccion": 18,
+      "id_vehiculo": 20,
+      "id_cliente": 15,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-29 03:37",
+      "monto": 58522,
+      "observaciones": "Vehiculo con sistema de entretenimiento para los pasajeros traseros"
+  },
+  {
+      "id_transaccion": 19,
+      "id_vehiculo": 19,
+      "id_cliente": 10,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-06-30 04:52",
+      "monto": 232000,
+      "observaciones": "El cliente solicitó polarizar las ventanas"
+  },
+  {
+      "id_transaccion": 20,
+      "id_vehiculo": 21,
+      "id_cliente": 13,
+      "tipo_transaccion": "Compra",
+      "fecha": "2024-07-01 12:08",
+      "monto": 30000,
+      "observaciones": "Incluye la primer revisión técnica gratuita."
+  }
+]
