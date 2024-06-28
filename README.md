@@ -39,11 +39,11 @@ A continuación se detallarán los pasos que se tomaron para la construcción de
 
 1. **CRUD**  
 
-2. **Conococimiento de la asignatura y sus alcances: ** esto quiere decir que no podiamos realizar el trabajo con algunas herramientas de python o funciones como ser try catch, manejo de excepciones etc., solamente con lo visto en clases. 
+2. **Conococimiento de la asignatura y sus alcances**: esto quiere decir que no podiamos realizar el trabajo con algunas herramientas de python o funciones como ser try catch, manejo de excepciones etc., solamente con lo visto en clases. 
 
-3.Manejo de Json. 
+3.**Manejo de Json**. 
 
-4.**Opcional: ** interfaz, consumo de api y otras funciones que puedan ser utilizadas o le agreguen valor al trabajo. 
+4.**Opcional**: interfaz, consumo de api y otras funciones que puedan ser utilizadas o le agreguen valor al trabajo. 
 
  
 
@@ -57,7 +57,7 @@ A continuación se detallarán los pasos que se tomaron para la construcción de
 
  
 
- ## BackEnd 🛠️ 
+## BackEnd 🛠️ 
 
 ### CRUD 
 
@@ -91,7 +91,20 @@ Algunas de estas funciones modularizadas y una breve explicacion son:
 
 5. **crear_tabla**: Crea una tabla utilizando ttk.Treeview para mostrar datos con encabezados y permite la interacción con los registros. 
 
+### API para Manejo de Datos en JSON
+
+Esta API permite gestionar datos almacenados en archivos JSON utilizando `pandas` y `json`. Las funciones principales incluyen:
+
+- **Verificación y Creación de Archivos JSON**: Verifica si un archivo JSON existe y lo crea si no es así.
+- **Lectura de Datos**: Lee datos desde un archivo JSON y los devuelve como un DataFrame.
+- **Guardado de Datos**: Guarda un DataFrame en un archivo JSON.
+- **Alta de Registros**: Agrega nuevos registros a un archivo JSON.
+- **Baja de Registros**: Elimina registros específicos de un archivo JSON.
+- **Modificación de Registros**: Modifica registros existentes en un archivo JSON.
+- **Filtrado y Ordenamiento**: Lee registros de un JSON aplicando filtros y ordenamiento opcionales.
+
 ###Versiones y evolución del backend. 
+
 
 
 ## FrontEnd 🎨 
@@ -116,7 +129,7 @@ El resultado es una interfaz limpia, organizada y altamente funcional que brinda
 
   
 
- ###Versiones y evolución de la interfaz. 
+###Versiones y evolución de la interfaz. 
 
 En un principio se trabajó con una traducción de código a traves de Tkdesign por medio de la consumicion del api de figma, para la realización de la misma se necesita conocimientos solidos de figma porque se deben seguir ciertas pautas para cumplir con la libreria tkdesign y que la transcripción sea correcta. En el repositorio del trabajo en Git-Hub se puede ver una primera version con la utilización de esta. 
 
