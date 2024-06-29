@@ -12,7 +12,7 @@ def existe_json(nombre_json):
 #-----------------------------------------------------------------------------------------------------------------#
 def obtener_tabla_desde_json(nombre_del_json):
     existe_json(nombre_del_json)
-    pk="id_cliente"
+    
     return READERTABLE.read_json('./backend/datos/' + nombre_del_json + ".json", )
 
 def obtener_json_desde_tabla(nombre_del_json,tabla_a_guardar):
@@ -49,27 +49,37 @@ def baja_registro(nombre_del_json,registro_a_eliminar):
     
     
       
-def modificar_registro(nombre_del_json,registro_a_modificar,nuevos_valores):
+def modificar_registro(entidad, id_registro, dict_modificado):
+    nombre_del_json = entidad
     tabla = obtener_tabla_desde_json(nombre_del_json)
-    campo="id_"+nombre_del_json
-    id_seleccionado=0
-    
-    if campo not in tabla.columns or registro_a_modificar not in tabla[campo].values:
-        print(f"Registro con {campo} = {registro_a_modificar} no encontrado.")
-        return
-    
-    indice = tabla[tabla[campo] == registro_a_modificar].index[campo]
+    campo = list(id_registro.keys())[0]
+    id_valor = id_registro[campo]  
 
-    for columna, valor in nuevos_valores.items():
-        tabla.at[indice, columna] = valor
+    if campo not in tabla.columns or id_valor not in tabla[campo].values:
+        print(f"Registro con {campo} = {id_valor} no encontrado.")
+        return
+
+    indice = tabla[tabla[campo] == id_valor].index[0]
+
+    for columna, valor in dict_modificado.items():
+        if columna in tabla.columns:
+            tabla.at[indice, columna] = valor
+        else:
+            print(f"Columna {columna} no encontrada en la tabla {nombre_del_json}. Se omiti esta columna.")
+
+    obtener_json_desde_tabla(nombre_del_json, tabla)
+    print("Registro modificado")
     
-    obtener_json_desde_tabla(nombre_del_json,tabla)
+    
     
     
     
       
 def leer_registros(nombre_del_json, ordenar=None, filtro_aplicado=None):
+    
     tabla = obtener_tabla_desde_json(nombre_del_json)
+    
+    
     
     if filtro_aplicado:
         for clave, valor in filtro_aplicado.items():
@@ -77,6 +87,8 @@ def leer_registros(nombre_del_json, ordenar=None, filtro_aplicado=None):
             
     if ordenar:
         tabla = tabla.sort_values(ordenar[0],ascending=ordenar[1])
+        
+    
     
     return tabla
     
