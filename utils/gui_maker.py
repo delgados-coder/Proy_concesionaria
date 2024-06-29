@@ -247,35 +247,43 @@ def crear_formulario_de_busqueda(ventana_padre, campo, entidad, tabla):
 #---------------------------------------------------------------------------------------#
 def crear_formulario(padre, accion, seccion, pos_x=100, pos_y=100, dict_datos=None):
     campos_clie = ["nombre", "apellido", "documento", "direccion", "telefono", "correo_electronico"]
-    campos_vehi = ["dominio","marca","modelo","anio","kilometraje","precio_compra","precio_venta","estado"]
+    campos_vehi = ["dominio","marca","modelo","tipo","anio","kilometraje","precio_compra","precio_venta","estado"]
     campos_tran = ["id_vehiculo","id_cliente","tipo_transaccion","fecha","monto","observaciones"]
     
     if seccion == "cliente":
         campos = campos_clie
+        
+        
     elif seccion == "vehiculo":
         campos = campos_vehi
+        
+        
     elif seccion == "transaccion":
         campos = campos_tran
+        
+        
     else:
         raise ValueError("Sección no válida")
     
    
     entries = {}
     for i, campo in enumerate(campos):
-        etiqueta = tk.Label(padre, text=campo)
-        etiqueta.place(x=pos_x, y=pos_y + i*30)
-        
-        entrada = tk.Entry(padre, background="green")
+          
+        entrada = tk.Entry(padre,background="#C3DBEB", relief="flat")
         
         if accion == "editar" and dict_datos is not None:
             entrada.insert(0, dict_datos.get(campo, ""))
         
-        entrada.place(x=pos_x + 150, y=pos_y + i*30)  #x30
+        entrada.place(x=pos_x+15, y=pos_y + i*49 +2, width=272)  #x30
         entries[campo] = entrada                 
     
     button_aceptar = crear_boton(padre, "botones/btn_aceptar.png")
     button_aceptar.config(command=lambda: aceptar(entries, accion, seccion))
-    posicionar_boton(button_aceptar, pos_x=999, pos_y=385)
+    posicionar_boton(button_aceptar, pos_x=241, pos_y=549)
+
+
+
+
 
 def aceptar(entries, accion, seccion):
     datos = {}

@@ -162,30 +162,44 @@ def btn_busqueda_por_campo(entidad,filtro):
     registros = api.leer_registros(entidad,filtro_aplicado=filtro)
     GM.rellenar_tabla(config.tabla_contenido,registros)
     
+    
 def crear_botones_acciones(padre):
+    if config.seccion_actual == "cliente":
+        entry_x=246
+        entry_y=188
+    elif config.seccion_actual == "vehiculo":
+        entry_x=237
+        entry_y=99
+    elif config.seccion_actual == "transaccion":
+        entry_x=253
+        entry_y=192
     def ventana(seleccion):
         GM.destruir_widget(config.ventana_emergente)
         config.ventana_emergente=None
         if seleccion=="agregar":
-            config.ventana_emergente = GM.crear_ventana_emergente(config.ventana_principal,ancho_ventana=1243,alto_ventana=443)
-            config.lienzo_emergente = GM.crear_lienzo_canvas(config.ventana_emergente,1243,443,bg_color="red")
+            config.ventana_emergente = GM.crear_ventana_emergente(config.ventana_principal,ancho_ventana=648,alto_ventana=648)
+            config.lienzo_emergente = GM.crear_lienzo_canvas(config.ventana_emergente,648,648,bg_color="red")
             GM.posicionar_canva_fondo(config.lienzo_emergente,pos_x=0,pos_y=0)
             seccion_actual="fondos/form_"+config.seccion_actual+".png"
             print("seccion actual="+seccion_actual)
-            config.image = GM.crear_imagen(canvas_frame=config.lienzo_emergente,nombre_imagen=seccion_actual,pos_centro_x=1243/2,pos_centro_y=443/2)
-            GM.crear_formulario(config.lienzo_emergente, accion="agregar", seccion=config.seccion_actual, dict_datos=None)
+            config.image = GM.crear_imagen(canvas_frame=config.lienzo_emergente,nombre_imagen=seccion_actual,pos_centro_x=648/2,pos_centro_y=648/2)
+            GM.crear_formulario(config.lienzo_emergente, accion="agregar", seccion=config.seccion_actual, dict_datos=None,
+            pos_x=entry_x,
+            pos_y=entry_y                    
+            )
                 
-            
-            
         elif seleccion=="editar":
             if config.seccion_actual==config.registro_seleccionado_entidad:
-                config.ventana_emergente = GM.crear_ventana_emergente(config.ventana_principal,ancho_ventana=1243,alto_ventana=443)
-                config.lienzo_emergente = GM.crear_lienzo_canvas(config.ventana_emergente,1243,443,bg_color="blue")
+                config.ventana_emergente = GM.crear_ventana_emergente(config.ventana_principal,ancho_ventana=648,alto_ventana=648)
+                config.lienzo_emergente = GM.crear_lienzo_canvas(config.ventana_emergente,648,648,bg_color="blue")
                 GM.posicionar_canva_fondo(config.lienzo_emergente,pos_x=0,pos_y=0)
                 seccion_actual="fondos/form_"+config.seccion_actual+".png"
                 print("seccion actual="+seccion_actual)
-                config.image = GM.crear_imagen(canvas_frame=config.lienzo_emergente,nombre_imagen=seccion_actual,pos_centro_x=1243/2,pos_centro_y=443/2)
-                GM.crear_formulario(config.lienzo_emergente, accion="editar", seccion=config.seccion_actual, dict_datos=config.registro_seleccionado_datos)
+                config.image = GM.crear_imagen(canvas_frame=config.lienzo_emergente,nombre_imagen=seccion_actual,pos_centro_x=648/2,pos_centro_y=648/2)
+                GM.crear_formulario(config.lienzo_emergente, accion="editar", seccion=config.seccion_actual, dict_datos=config.registro_seleccionado_datos,
+                pos_x=entry_x,                    
+                pos_y=entry_y                    
+                )
                 
                 
         elif seleccion=="eliminar":
