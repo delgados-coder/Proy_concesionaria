@@ -81,7 +81,7 @@ Se modularizo el código para que este sea más legible, escalable, además que 
 
 Algunas de estas funciones modularizadas y una breve explicacion son: 
 
-1.**crear_ventana_principal**: Crea la ventana principal de la aplicación con parámetros de ancho, alto, título, ícono y color de fondo.  
+1. **crear_ventana_principal**: Crea la ventana principal de la aplicación con parámetros de ancho, alto, título, ícono y color de fondo.  
 
 2. **crear_ventana_emergente**: Crea una ventana emergente dentro de la ventana principal con parámetros de ancho, alto, título y color de fondo. 
 
@@ -103,7 +103,7 @@ Esta API permite gestionar datos almacenados en archivos JSON utilizando `pandas
 - **Modificación de Registros**: Modifica registros existentes en un archivo JSON.
 - **Filtrado y Ordenamiento**: Lee registros de un JSON aplicando filtros y ordenamiento opcionales.
 
-## Versiones y Evolución del Backend
+### Versiones y Evolución del Backend
 
 Inicialmente, se realizaron bocetos de las entidades y sus atributos para definir la estructura de datos necesaria para el sistema. Este paso permitió identificar las principales entidades y sus relaciones, proporcionando una base sólida para el desarrollo del diagrama de entidad-relación.
 Con los bocetos iniciales, se creó un diagrama de entidad-relación (ERD) detallado, que incluyó todas las entidades principales y sus atributos. Este diagrama sirvió como una guía visual para entender mejor las relaciones entre las diferentes partes del sistema y cómo interactuarían entre sí.
@@ -146,7 +146,7 @@ El resultado es una interfaz limpia, organizada y altamente funcional que brinda
 
   
 
-## Versiones y evolución de la interfaz. 
+### Versiones y evolución del FrontEnd. 
 
 En un principio se trabajó con una traducción de código a traves de Tkdesign por medio de la consumicion del api de figma, para la realización de la misma se necesita conocimientos solidos de figma porque se deben seguir ciertas pautas para cumplir con la libreria tkdesign y que la transcripción sea correcta. En el repositorio del trabajo en Git-Hub se puede ver una primera version con la utilización de esta. 
 
