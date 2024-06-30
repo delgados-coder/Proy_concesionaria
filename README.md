@@ -35,7 +35,7 @@ A continuación se detallarán los pasos que se tomaron para la construcción de
 
  
 
-###Consignas a cumplir: 💼 
+### Consignas a cumplir: 💼 
 
 1. **CRUD**  
 
@@ -57,7 +57,7 @@ A continuación se detallarán los pasos que se tomaron para la construcción de
 
  
 
-### BackEnd 🛠️ 
+## BackEnd 🛠️ 
 
 ### CRUD 
 
@@ -119,12 +119,12 @@ Después de asegurar la funcionalidad del backend a través de la consola, se ex
 
 El proceso de desarrollo del backend incluyó varias etapas clave, desde la planificación inicial hasta la optimización y mejora continua. A través de pruebas rigurosas, modularización de funciones y mejoras en la manipulación de datos, el backend evolucionó para convertirse en una parte robusta y segura del sistema de gestión de la concesionaria de vehículos.
 
-## Separación del Frontend y Backend por Seguridad
+### Separación del Frontend y Backend por Seguridad
 
 Para mejorar la seguridad y la integridad del sistema, se decidió separar más claramente el frontend del backend. Esta separación garantiza que el backend solo se encargue de las operaciones necesarias sin comprometer los datos sensibles de los clientes. Se implementaron medidas de seguridad adicionales para proteger los datos y asegurar la estabilidad del sistema a largo plazo, asegurando que las funciones críticas del backend no expongan la información a posibles ataques malintencionados.
 
 
-### FrontEnd 🎨 
+## FrontEnd 🎨 
 
 El proyecto se enfoca en el diseño y desarrollo de la interfaz gráfica para el frontend de una aplicación. 
 Se siguió un proceso cuidadosamente planificado, desde la lluvia de ideas inicial hasta la implementación final, utilizando la biblioteca Tkinter en Python. 
@@ -156,14 +156,14 @@ Más adelante la versión 1.0 es descartada al hacer un análisis junto al backe
 
 Estudiando tkdesign con arquitectura inversa acompañado del compañero BackEnd se descubrió como es el funcionamiento de este y como se podría simplificar el mismo código trabajando como el sistema de etiquetado que hace tkDesign en Figma nos dimos cuenta que se podría implementar de una forma similar a este y con conocimientos en tkinter vanila, se imitó el funcionamiento de Tkdesign junto a tkinter, reduciendo y haciendo más legible el código hasta llegar luego de diferentes pruebas al codigo final, con la segmentación y una comunicación optmica con los datos y funciones del backend traidas y mostradas en el Front, haciendo una interfaz limpia, agradable visualmente, y funcional pudiendo mostrar tablas, totalizaciones, elementos nav, formularios etc.
 
-### Tester 🔧 
+## Tester 🔧 
 
 La creación de Json fue realizada por el tester para tener una base en la que se pueda trabajar y que pueda ser relacionada con entidad relación más facil para la lectura de datos. 
 
 Luego nos acompañó en diferentes testeo que se realizo en parte del back y del front para encontrar bugs tantos visuales como de código, aportándonos comentarios que nos ayudaban y daban otros puntos de vistas que enriquecia el proyecto.
  
 
-###Notas sobre el proyecto 📖 
+### Notas sobre el proyecto 📖 
 
 **Escalabilidad ** El proyecto puede ser escalable y replicado para otro tipo de negocios o gestor como ser una biblioteca, ventas de cualquier producto etc 
 
