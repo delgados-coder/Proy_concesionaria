@@ -41,7 +41,7 @@ A continuación se detallarán los pasos que se tomaron para la construcción de
 
 2. **Conococimiento de la asignatura y sus alcances**: esto quiere decir que no podiamos realizar el trabajo con algunas herramientas de python o funciones como ser try catch, manejo de excepciones etc., solamente con lo visto en clases. 
 
-3.**Manejo de Json**. 
+3.**Manejo de Json**
 
 4.**Opcional**: interfaz, consumo de api y otras funciones que puedan ser utilizadas o le agreguen valor al trabajo. 
 
@@ -57,7 +57,7 @@ A continuación se detallarán los pasos que se tomaron para la construcción de
 
  
 
-## BackEnd 🛠️ 
+### BackEnd 🛠️ 
 
 ### CRUD 
 
@@ -85,7 +85,7 @@ Algunas de estas funciones modularizadas y una breve explicacion son:
 
 2. **crear_ventana_emergente**: Crea una ventana emergente dentro de la ventana principal con parámetros de ancho, alto, título y color de fondo. 
 
- 3. **crear_lienzo_canvas**: Crea un lienzo canvas para dibujar elementos gráficos como imágenes y rectángulos.  
+3. **crear_lienzo_canvas**: Crea un lienzo canvas para dibujar elementos gráficos como imágenes y rectángulos.  
 
 4. **crear_boton**: Crea un botón con una imagen, configurable para realizar acciones específicas.  
 
@@ -103,11 +103,28 @@ Esta API permite gestionar datos almacenados en archivos JSON utilizando `pandas
 - **Modificación de Registros**: Modifica registros existentes en un archivo JSON.
 - **Filtrado y Ordenamiento**: Lee registros de un JSON aplicando filtros y ordenamiento opcionales.
 
-###Versiones y evolución del backend. 
+## Versiones y Evolución del Backend
+
+Inicialmente, se realizaron bocetos de las entidades y sus atributos para definir la estructura de datos necesaria para el sistema. Este paso permitió identificar las principales entidades y sus relaciones, proporcionando una base sólida para el desarrollo del diagrama de entidad-relación.
+Con los bocetos iniciales, se creó un diagrama de entidad-relación (ERD) detallado, que incluyó todas las entidades principales y sus atributos. Este diagrama sirvió como una guía visual para entender mejor las relaciones entre las diferentes partes del sistema y cómo interactuarían entre sí.
+Luego elaboró un mapa mental que describía las operaciones CRUD (Create, Read, Update, Delete) para cada entidad identificada en el ERD. Esto ayudó a visualizar todas las operaciones necesarias para gestionar los datos del sistema y garantizar que todas las funcionalidades básicas estuvieran cubiertas.
+
+Se realizaron pruebas iniciales de las funciones del backend a través de la consola. Esto incluyó la verificación de que las operaciones CRUD funcionaran correctamente, y se ajustaron los detalles según fuera necesario para asegurar la fiabilidad del sistema.
+Para mejorar la experiencia de desarrollo y depuración, se crearon funciones auxiliares como limpiar la consola y generar menús de opciones. Estas funciones facilitaron la interacción con el sistema durante las pruebas y el desarrollo.
+Una vez implementadas las funciones básicas, se realizó una optimización del código para identificar y eliminar patrones repetitivos. Este proceso permitió hacer el código más eficiente y mantenible, facilitando futuras actualizaciones y expansiones del sistema.
+
+Durante el desarrollo, se identificó que la manipulación de datos en formato JSON podía optimizarse utilizando la librería Pandas. Esta librería permitió convertir los JSON en tablas, simplificando las operaciones de manipulación de datos y permitiendo una integración más eficiente con MySQL. El código fue modificado para aprovechar estas capacidades, mejorando significativamente el rendimiento y la simplicidad del backend.
+
+Después de asegurar la funcionalidad del backend a través de la consola, se exploró la posibilidad de crear una interfaz gráfica para mejorar la interacción del usuario. Se evaluaron diferentes herramientas y se decidió implementar una interfaz usando Tkinter, debido a su facilidad de uso y capacidad para integrarse con el backend existente.
+
+El proceso de desarrollo del backend incluyó varias etapas clave, desde la planificación inicial hasta la optimización y mejora continua. A través de pruebas rigurosas, modularización de funciones y mejoras en la manipulación de datos, el backend evolucionó para convertirse en una parte robusta y segura del sistema de gestión de la concesionaria de vehículos.
+
+## Separación del Frontend y Backend por Seguridad
+
+Para mejorar la seguridad y la integridad del sistema, se decidió separar más claramente el frontend del backend. Esta separación garantiza que el backend solo se encargue de las operaciones necesarias sin comprometer los datos sensibles de los clientes. Se implementaron medidas de seguridad adicionales para proteger los datos y asegurar la estabilidad del sistema a largo plazo, asegurando que las funciones críticas del backend no expongan la información a posibles ataques malintencionados.
 
 
-
-## FrontEnd 🎨 
+### FrontEnd 🎨 
 
 El proyecto se enfoca en el diseño y desarrollo de la interfaz gráfica para el frontend de una aplicación. 
 Se siguió un proceso cuidadosamente planificado, desde la lluvia de ideas inicial hasta la implementación final, utilizando la biblioteca Tkinter en Python. 
@@ -129,7 +146,7 @@ El resultado es una interfaz limpia, organizada y altamente funcional que brinda
 
   
 
-###Versiones y evolución de la interfaz. 
+## Versiones y evolución de la interfaz. 
 
 En un principio se trabajó con una traducción de código a traves de Tkdesign por medio de la consumicion del api de figma, para la realización de la misma se necesita conocimientos solidos de figma porque se deben seguir ciertas pautas para cumplir con la libreria tkdesign y que la transcripción sea correcta. En el repositorio del trabajo en Git-Hub se puede ver una primera version con la utilización de esta. 
 
@@ -137,25 +154,24 @@ Más adelante la versión 1.0 es descartada al hacer un análisis junto al backe
 
 **Solución y evolución a la version 2.0** 💪 
 
-Estudiando tkdesign con arquitectura inversa acompañado del compañero BackEnd se descubrió como es el funcionamiento de este y como se podría simplificar el mismo código trabajando como el sistema de etiquetado que hace tkDesign en Figma nos dimos cuenta que se podría implementar de una forma similar a este y con conocimientos en tkinter vanila, se imitó el funcionamiento de Tkdesign junto a tkinter, reduciendo y haciendo más legible el código. 
+Estudiando tkdesign con arquitectura inversa acompañado del compañero BackEnd se descubrió como es el funcionamiento de este y como se podría simplificar el mismo código trabajando como el sistema de etiquetado que hace tkDesign en Figma nos dimos cuenta que se podría implementar de una forma similar a este y con conocimientos en tkinter vanila, se imitó el funcionamiento de Tkdesign junto a tkinter, reduciendo y haciendo más legible el código hasta llegar luego de diferentes pruebas al codigo final, con la segmentación y una comunicación optmica con los datos y funciones del backend traidas y mostradas en el Front, haciendo una interfaz limpia, agradable visualmente, y funcional pudiendo mostrar tablas, totalizaciones, elementos nav, formularios etc.
 
-## Tester 🔧 
+### Tester 🔧 
 
-La creación de Json coherente fue realizada también por el testeador para tener una base coherente y que pueda ser relacionada con entidad relación más facil para la lectura de datos. 
+La creación de Json fue realizada por el tester para tener una base en la que se pueda trabajar y que pueda ser relacionada con entidad relación más facil para la lectura de datos. 
 
-Luego nos acompañó a un testeo riguroso para encontrar bugs tantos visuales como de código, aportándonos comentarios que nos ayudaban a la escala y evolución del proyecto mismo. 
-
+Luego nos acompañó en diferentes testeo que se realizo en parte del back y del front para encontrar bugs tantos visuales como de código, aportándonos comentarios que nos ayudaban y daban otros puntos de vistas que enriquecia el proyecto.
  
 
 ###Notas sobre el proyecto 📖 
 
- **Escalabilidad ** El proyecto puede ser escalable y replicado para otro tipo de negocios o gestor como ser una biblioteca, ventas de cualquier producto etc 
+**Escalabilidad ** El proyecto puede ser escalable y replicado para otro tipo de negocios o gestor como ser una biblioteca, ventas de cualquier producto etc 
 
-**Sencillez**  Fácil  de entender y manipular con segmentación y una arquitectura de rápida compresión. 
+**Sencillez**  Fácil de entender y manipular con segmentación y una arquitectura de rápida compresión. 
 
 **Actualización y mejora** Puede mejorarse a futuro ya que por el tiempo que fue hecho se pueden presentar algunos bugs no contemplados. 
 
-**Ramificación de oportunidades** En la creación de este proyecto nos dimos cuenta de la posible creación de un framework ya que al hacer la arquitectura inversa nos dimos cuenta de como podríamos solventar algunos errores y limpieza del código la lógica de tkinter en general. 
+**Ramificación de oportunidades** En la creación de este proyecto nos dimos cuenta de la posible creación de un framework ya que al hacer la arquitectura inversa nos percatamos de como podríamos solventar algunos errores y limpieza del código de la lógica de tkinter y tkinterdesign en general. 
 
 ## Contacto 📞 
 
