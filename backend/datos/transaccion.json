@@ -1,30 +1,12 @@
 [
     {
-        "id_transaccion":2,
-        "id_vehiculo":1,
-        "id_cliente":3,
-        "tipo_transaccion":"Venta",
-        "fecha":"2024-02-03 11:00",
-        "monto":111000,
-        "observaciones":"Cliente vende un veh\u00edculo usado a la concesionaria"
-    },
-    {
-        "id_transaccion":3,
-        "id_vehiculo":4,
-        "id_cliente":2,
+        "id_transaccion":0,
+        "id_vehiculo":13,
+        "id_cliente":5,
         "tipo_transaccion":"Compra",
-        "fecha":"2024-03-10 08:07",
-        "monto":27000,
-        "observaciones":"Cliente compra auto usado"
-    },
-    {
-        "id_transaccion":4,
-        "id_vehiculo":2,
-        "id_cliente":4,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-03-20 09:12",
-        "monto":29000,
-        "observaciones":"Veh\u00edculo con mantenimiento gratuito por 1 a\u00f1o"
+        "fecha":"2024-06-03 19:53",
+        "monto":456789,
+        "observaciones":"Peque\u00f1os Detalles\/Detalles de motor"
     },
     {
         "id_transaccion":5,
@@ -36,19 +18,10 @@
         "observaciones":"El cliente solicit\u00f3 instalaci\u00f3n de equipo de sonido adicional"
     },
     {
-        "id_transaccion":6,
-        "id_vehiculo":5,
-        "id_cliente":11,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-04-12 10:09",
-        "monto":43000,
-        "observaciones":"El cliente recibi\u00f3 una sesi\u00f3n de entrenamiento sobre el uso del veh\u00edculo"
-    },
-    {
         "id_transaccion":7,
         "id_vehiculo":6,
         "id_cliente":7,
-        "tipo_transaccion":"Compra",
+        "tipo_transaccion":"Venta",
         "fecha":"2024-04-17 15:22",
         "monto":249900,
         "observaciones":"Incluye alfombras personalizadas como obsequio."
@@ -64,7 +37,7 @@
     },
     {
         "id_transaccion":9,
-        "id_vehiculo":11,
+        "id_vehiculo":13,
         "id_cliente":5,
         "tipo_transaccion":"Compra",
         "fecha":"2024-06-01 13:00",
@@ -99,24 +72,6 @@
         "observaciones":"El vehiculo tiene asientos de cuero premium"
     },
     {
-        "id_transaccion":13,
-        "id_vehiculo":15,
-        "id_cliente":12,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-13 11:50",
-        "monto":115000,
-        "observaciones":"El cliente recibi\u00f3 una membres\u00eda gratuita al club de conductores"
-    },
-    {
-        "id_transaccion":14,
-        "id_vehiculo":14,
-        "id_cliente":18,
-        "tipo_transaccion":"Venta",
-        "fecha":"2024-06-16 15:33",
-        "monto":99000,
-        "observaciones":""
-    },
-    {
         "id_transaccion":15,
         "id_vehiculo":17,
         "id_cliente":9,
@@ -133,15 +88,6 @@
         "fecha":"2024-06-22 01:43",
         "monto":28500,
         "observaciones":"Incluye seguro vehicular por seis meses"
-    },
-    {
-        "id_transaccion":17,
-        "id_vehiculo":18,
-        "id_cliente":8,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-25 02:20",
-        "monto":39900,
-        "observaciones":"Cliente recibi\u00f3 un set de herramientas como obsequio."
     },
     {
         "id_transaccion":18,

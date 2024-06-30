@@ -75,7 +75,7 @@ def modificar_registro(entidad, id_registro, dict_modificado):
     
     
       
-def leer_registros(nombre_del_json, ordenar=None, filtro_aplicado=None):
+def leer_registrox(nombre_del_json, ordenar=None, filtro_aplicado=None):
     
     tabla = obtener_tabla_desde_json(nombre_del_json)
     
@@ -91,4 +91,23 @@ def leer_registros(nombre_del_json, ordenar=None, filtro_aplicado=None):
     
     
     return tabla
+
+def leer_registros(nombre_del_json, ordenar=None, filtro_aplicado=None):
+    tabla = obtener_tabla_desde_json(nombre_del_json)
+    
+    if filtro_aplicado:
+        for clave, valor in filtro_aplicado.items():
+            tabla = tabla[tabla[clave] == valor]
+            
+    if ordenar:
+        tabla = tabla.sort_values(ordenar[0], ascending=ordenar[1])
+
+    total_compras = 0
+    total_ventas = 0
+    
+    if nombre_del_json == "transaccion":
+        total_compras = tabla[tabla['tipo_transaccion'] == "Compra"]['monto'].sum()
+        total_ventas = tabla[tabla['tipo_transaccion'] == "Venta"]['monto'].sum()
+
+    return tabla, total_compras, total_ventas
     

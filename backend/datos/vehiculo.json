@@ -49,7 +49,7 @@
     },
     {
         "id_vehiculo":6,
-        "dominio":"DTB329",
+        "dominio":"DTX329",
         "marca":"Lexus",
         "modelo":"LC",
         "tipo":"Hatchback",
@@ -57,18 +57,6 @@
         "kilometraje":5000,
         "precio_compra":0,
         "precio_venta":249000,
-        "estado":"Reservado"
-    },
-    {
-        "id_vehiculo":7,
-        "dominio":"LYH329",
-        "marca":"Mercedes-Benz",
-        "modelo":"GLE",
-        "tipo":"Hatchback",
-        "anio":2024,
-        "kilometraje":7850,
-        "precio_compra":0,
-        "precio_venta":17000,
         "estado":"Reservado"
     },
     {
@@ -86,25 +74,13 @@
     {
         "id_vehiculo":10,
         "dominio":"UFQ923",
-        "marca":"Citroen",
+        "marca":"Sedan",
         "modelo":"C5",
         "tipo":"Hatchback",
         "anio":2024,
         "kilometraje":7850,
         "precio_compra":14000,
         "precio_venta":17000,
-        "estado":"Reservado"
-    },
-    {
-        "id_vehiculo":16,
-        "dominio":"CMT779",
-        "marca":"BMW",
-        "modelo":"5 Series",
-        "tipo":"Hatchback",
-        "anio":2024,
-        "kilometraje":3053,
-        "precio_compra":0,
-        "precio_venta":28500,
         "estado":"Reservado"
     },
     {
@@ -117,18 +93,6 @@
         "kilometraje":5978,
         "precio_compra":0,
         "precio_venta":39900,
-        "estado":"Reservado"
-    },
-    {
-        "id_vehiculo":19,
-        "dominio":"YHP827",
-        "marca":"Alfa Romeo",
-        "modelo":"Giulia",
-        "tipo":"Hatchback",
-        "anio":2015,
-        "kilometraje":10053,
-        "precio_compra":0,
-        "precio_venta":232000,
         "estado":"Reservado"
     }
 ]

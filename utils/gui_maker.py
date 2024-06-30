@@ -138,8 +138,9 @@ def posicionar_boton(boton,pos_x=0,pos_y=0,ancho=None,alto=None):
 #|---------------|Funciones de BOTONED|--------------------#
 
 #|---------------|Funciones de Textos|--------------------#
-def crear_texto(canvas_frame,texto="default",pos_x=0,pos_y=0,color_fuente="blue",size_fuente=10,tipo_fuente="Arial"):
-    return canvas_frame.create_text(pos_x,pos_y,anchor="nw",text=Text,fill=color_fuente,font=(tipo_fuente, size_fuente))
+def crear_texto(padre, texto="default", pos_x=0, pos_y=0, color_fuente="blue", size_fuente=10, tipo_fuente="Arial"):
+    etiqueta = tk.Label(padre, text=texto, fg=color_fuente, font=(tipo_fuente, size_fuente))
+    etiqueta.place(x=pos_x, y=pos_y)
 #|---------------|Funciones de Textos|--------------------#
 
 
