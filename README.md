@@ -4,7 +4,7 @@
 
 ## Autores ✒️ 
 
-* **Santiago, Delgado** - *BackEnd* -  [delgados-coder](https://github.com/delgados-coder) 
+* **Santiago, Delgado** - *BackEnd* -  [delgados-coder](https://github.com/Delgados-Coder) 
 
 * **Pablo Agustín, Jerez** - *FrontEnd* - [PunksCode](https://github.com/PunksCode) 
 
