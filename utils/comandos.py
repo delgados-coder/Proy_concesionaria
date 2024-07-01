@@ -4,14 +4,6 @@ from tkinter import ttk
 from backend.funciones import api
 from utils import gui_maker as GM
 
-
-
-
-
-#----------------------------------------------------------------------------------------------#
-
-def accion():
-    print("-----------------------| Boton Presionado |-----------------------------------")
     
 def btn_secciones_click(seccion):
     GM.destruir_widget(config.total_img)
@@ -61,7 +53,6 @@ def btn_secciones_click(seccion):
         
         registros=api.leer_registros(entidad)
         GM.rellenar_tabla(config.tabla_contenido,registros[0])
-        
         
         
     elif seccion == 'vehiculo':
@@ -127,18 +118,15 @@ def btn_secciones_click(seccion):
         
         print("TOTAL EN COMPRAS ->",registros[1])
         print("TOTAL EN  VENTAS ->",registros[2])
-        config.lienzo_total = GM.crear_lienzo_canvas(config.ventana_principal,230,44)
-        GM.posicionar_canva_fondo(config.lienzo_total,pos_x=1009,pos_y=599)
-        config.total_img=GM.crear_imagen(config.lienzo_total, "./fondos/fondo_total.png", pos_centro_x=115, pos_centro_y=22)
-        config.total_compra=GM.crear_texto(config.lienzo_total,texto=registros[1],pos_x=9+3,pos_y=24,color_fuente="black",size_fuente=6,tipo_fuente="Arial")
-        config.total_ventas=GM.crear_texto(config.lienzo_total,texto=registros[2],pos_x=142+3,pos_y=24,color_fuente="black",size_fuente=6,tipo_fuente="Arial")
+        config.lienzo_total = GM.crear_lienzo_canvas(config.ventana_principal,230,53)
+        GM.posicionar_canva_fondo(config.lienzo_total,pos_x=1011,pos_y=592)
+        config.total_img=GM.crear_imagen(config.lienzo_total, "./fondos/total_monto.png", pos_centro_x=115, pos_centro_y=27)
+        config.total_compra=GM.crear_texto(config.lienzo_total,texto=registros[1],pos_x=11+9,pos_y=32,color_fuente="black",size_fuente=8,tipo_fuente="Arial")
+        config.total_ventas=GM.crear_texto(config.lienzo_total,texto=registros[2],pos_x=138+9,pos_y=32,color_fuente="black",size_fuente=8,tipo_fuente="Arial")
         
         
     else:
         print("Se produjo un error al ejecutar el click - no se escuentra la seccion")
-
-
-
 
 
 def callback_clic_cabecera(entidad,tabla, campo):
@@ -174,11 +162,11 @@ def btn_busqueda_por_campo(entidad,filtro):
 
     registros = api.leer_registros(entidad,filtro_aplicado=filtro)
     GM.rellenar_tabla(config.tabla_contenido,registros[0])
-    config.lienzo_total = GM.crear_lienzo_canvas(config.ventana_principal,230,44)
-    GM.posicionar_canva_fondo(config.lienzo_total,pos_x=1009,pos_y=599)
-    config.total_img=GM.crear_imagen(config.lienzo_total, "./fondos/fondo_total.png", pos_centro_x=115, pos_centro_y=22)
-    config.total_compra=GM.crear_texto(config.lienzo_total,texto=registros[1],pos_x=9+3,pos_y=24,color_fuente="black",size_fuente=6,tipo_fuente="Arial")
-    config.total_ventas=GM.crear_texto(config.lienzo_total,texto=registros[2],pos_x=142+3,pos_y=24,color_fuente="black",size_fuente=6,tipo_fuente="Arial")
+    config.lienzo_total = GM.crear_lienzo_canvas(config.ventana_principal,230,53)
+    GM.posicionar_canva_fondo(config.lienzo_total,pos_x=1011,pos_y=592)
+    config.total_img=GM.crear_imagen(config.lienzo_total, "./fondos/total_monto.png", pos_centro_x=115, pos_centro_y=27)
+    config.total_compra=GM.crear_texto(config.lienzo_total,texto=registros[1],pos_x=11+9,pos_y=32,color_fuente="black",size_fuente=8,tipo_fuente="Arial")
+    config.total_ventas=GM.crear_texto(config.lienzo_total,texto=registros[2],pos_x=138+9,pos_y=32,color_fuente="black",size_fuente=8,tipo_fuente="Arial")
     
     
 def crear_botones_acciones(padre):

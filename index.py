@@ -7,7 +7,6 @@ ancho_ventana_p=1280
 alto_ventana_p=720
 
 
-
 #-----------------------|INICIO - VENTANA PRIMARIA |-------------------------#
 config.ventana_principal = GM.crear_ventana_principal(
 ancho_ventana=ancho_ventana_p,
@@ -16,27 +15,17 @@ titulo_ventana="software de Gestion -UNERCAR-",
 icon_path="./recursos/iconos/favicon.ico",
 color_base="#4B3621"
 )
-#-----------------------|FIN - VENTANA PRIMARIA |----------------------------#
-
-
 
 #-----------------------|INICIO - LIENZO CANVAS |-------------------------#
 config.lienzo = GM.crear_lienzo_canvas(config.ventana_principal,ancho_ventana_p,alto_ventana_p)
 GM.posicionar_canva_fondo(config.lienzo,pos_x=0,pos_y=0)
-#-----------------------|FIN - LIENZO CANVAS |----------------------------#
-
-
 
 #-----------------------|INICIO - imagen en Lienzo |-------------------------#
 config.image = GM.crear_imagen(canvas_frame=config.lienzo,nombre_imagen="fondos/fondo_index.png",pos_centro_x=ancho_ventana_p/2,pos_centro_y=alto_ventana_p/2)
-#-----------------------|FIN - imagen en Lienzo |----------------------------#
-
-
-
 
 #-----------------------|INICIO - TODOS LOS BOTONES |-------------------------#
 
-#-|1.Crera Botones |-#
+#-|Creador de los Botones|-#
 button_inicio = GM.crear_boton(config.ventana_principal,"botones/btn_inicio.png")
 button_inicio.config(
     command=lambda: comando.btn_secciones_click("inicio")
@@ -54,7 +43,7 @@ button_transacciones.config(
     command=lambda: comando.btn_secciones_click("transaccion")
 )
 
-#-|2.Podisionar Botoned |-#
+#-|Posición de los botones|-#
 GM.posicionar_boton(
     button_inicio,
     pos_x=330,
@@ -75,7 +64,4 @@ GM.posicionar_boton(
     pos_x=816,
     pos_y=121
 )
-
-
-
 config.ventana_principal.mainloop()

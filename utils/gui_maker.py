@@ -16,8 +16,6 @@ def relative_to_assets(path: str) -> Path:
 def destruir_widget(widget):
     if widget is not None:
         widget.destroy()
-#|---------------|funciones - eliminar|--------------------#
-
 
 #|---------------|funciones - Ventana PRINCIPAL|--------------------#
 def crear_ventana_principal(ancho_ventana=100,alto_ventana=100,titulo_ventana="default",icon_path=None,color_base="green"):
@@ -35,7 +33,6 @@ def crear_ventana_principal(ancho_ventana=100,alto_ventana=100,titulo_ventana="d
     window_root.configure(background=color_base)
     window_root.resizable(False, False)
     return window_root    
-#|---------------|funciones - Ventana PRINCIPAl|--------------------#
 
 #|---------------|funciones - Ventana emergente|--------------------#
 
@@ -53,8 +50,6 @@ def crear_ventana_emergente(padre,ancho_ventana=100,alto_ventana=100,titulo_vent
     ventana_emergente.configure(background=color_base)
     ventana_emergente.resizable(True, True)
     return ventana_emergente    
-#|---------------|funciones - Ventana emergente|--------------------#
-
 
 
 #|---------------|funciones - lienzo canvas|--------------------#
@@ -72,19 +67,18 @@ def crear_lienzo_canvas(ventana_padre,ancho,alto,bg_color="#989A9A"):
 
 def posicionar_canva_fondo(canvas_frame,pos_x=0,pos_y=0):
     canvas_frame.place(x=pos_x,y=pos_y)
-#|---------------|funciones - lienzo canvas|--------------------#
 
-
-#|---------------|Funciones de imagenes|--------------------#
+#|---------------|Funciones de imagenes-fondo|--------------------#
 def crear_imagen2(canvas_frame,nombre_imagen,pos_centro_x=0,pos_centro_y=0):
     cargar_imagen = PhotoImage(file=relative_to_assets(nombre_imagen))
     medida1=pos_centro_x
     medida2=pos_centro_y
     cargar_imagen.image = cargar_imagen
     return canvas_frame.create_image(medida1,medida2, image=cargar_imagen)
-#|---------------|Funciones de imagenes|--------------------#
 
-#|---------------|Funciones de imagenes|--------------------#
+#|---------------|Funciones de imagenes-arreglo de fondo|--------------------#
+'''Este crear imagen es necesario por más que repita code porque arrastra el error de que no encuentra la imagen y lo repara si se lo hace en un mismo archivo rompe al no poder
+procesar la imagen y repararla en la misma funcion'''
 def crear_imagen(canvas_frame, nombre_imagen, pos_centro_x=0, pos_centro_y=0):
     imagen_path = relative_to_assets(nombre_imagen)
     if os.path.isfile(imagen_path):
@@ -96,23 +90,17 @@ def crear_imagen(canvas_frame, nombre_imagen, pos_centro_x=0, pos_centro_y=0):
     else:
         print(f"La imagen {nombre_imagen} no existe en la ruta especificada.")
         canvas_frame.after(1000, lambda: crear_imagen(canvas_frame, nombre_imagen, medida1, medida2))
-#|---------------|Funciones de imagenes|--------------------#
-
-
-
 
 
 #|---------------|Funciones de rectangulos|--------------------#
 def crear_rectangulo(canvas_frame,pos_x=0,pos_y=0,ancho=10,alto=10,fondo="green"):
     canvas_frame.create_rectangle(pos_x,pos_y,pos_x+ancho,pos_y+alto,fill=fondo,outline="")
-#|---------------|Funciones de rectangulos|--------------------#
 
 #|---------------|funciones - frame|--------------------#
 def crear_frame(padre, pos_x=20, pos_y=20, ancho_frame=200, alto_frame=200, color="green"):
     frame = Frame(padre, width=ancho_frame, height=alto_frame, bg=color)
     frame.place(x=pos_x, y=pos_y)
     return frame
-#|---------------|funciones - frame|--------------------#
 
 #|---------------|Funciones de BOTONED|--------------------#
 def crear_boton(ventana_padre,nombre_boton):
@@ -135,15 +123,10 @@ def posicionar_boton(boton,pos_x=0,pos_y=0,ancho=None,alto=None):
         width=ancho,
         height=alto
     )
-#|---------------|Funciones de BOTONED|--------------------#
-
 #|---------------|Funciones de Textos|--------------------#
 def crear_texto(padre, texto="default", pos_x=0, pos_y=0, color_fuente="blue", size_fuente=10, tipo_fuente="Arial"):
-    etiqueta = tk.Label(padre, text=texto, fg=color_fuente, font=(tipo_fuente, size_fuente))
+    etiqueta = tk.Label(padre, text=texto, fg=color_fuente, font=(tipo_fuente, size_fuente), background="#C3DBEB")
     etiqueta.place(x=pos_x, y=pos_y)
-#|---------------|Funciones de Textos|--------------------#
-
-
     
 #|---------------|Funciones de Tablas|--------------------#
 def crear_tabla(entidad, padre, nombres_de_campos, nombres_de_campos_a_mostrar, pos_x=0, pos_y=0, ancho_tabla=1000, alto_tabla=500):
@@ -282,10 +265,6 @@ def crear_formulario(padre, accion, seccion, pos_x=100, pos_y=100, dict_datos=No
     button_aceptar.config(command=lambda: aceptar(entries, accion, seccion))
     posicionar_boton(button_aceptar, pos_x=241, pos_y=549)
 
-
-
-
-
 def aceptar(entries, accion, seccion):
     datos = {}
     for campo, entry in entries.items():
@@ -321,5 +300,3 @@ def aceptar(entries, accion, seccion):
         comando.btn_secciones_click(seccion)
     else:
         print("Se produjo un error")
-    
-    
