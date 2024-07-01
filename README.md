@@ -17,6 +17,10 @@
 Hola, ¡Bienvenidos a nuestro proyecto de sistema de gestión de concesionaria de vehículos para la asignatura Programación 1 para la Tecnicatura en Desarrollo Web que es cursada en la Universidad Nacional de Entre Rios de modalidad virtual (UNER)!
 A continuación se detallarán los pasos que se tomaron para la construcción del mismo proyecto con los roles asignados, además de la descripción de las tareas a realizar de cada integrante, además de apartados donde se describen un poco las funcionalidades hechas y la estructura del mismo. 
 
+ [Video-corto-sobre-el-proyecto](https://www.youtube.com/watch?v=T7G1J58Ri4I)
+ 
+ [Video-largo-sobre-el-proyecto](https://www.youtube.com/watch?v=iC5myNcA3Fw)
+
   
 
 ## Requisitos para su construcción📋 
@@ -33,7 +37,14 @@ A continuación se detallarán los pasos que se tomaron para la construcción de
 
 - **JSON**: Formato para el almacenamiento de datos. 
 
- 
+## Requisito para correr este proyecto
+
+pip install pandas (para manejo de datos)
+pip install tkinter (para la GUI)
+pip install os (estándar en Python)
+pip install path (estándar en Python)
+pip install ttk (incluido en tkinter)
+pip install json (estándar en Python)
 
 ### Consignas a cumplir: 💼 
 
