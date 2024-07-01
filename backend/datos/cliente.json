@@ -1,110 +1,362 @@
 [
     {
-        "id_cliente":0,
-        "nombre":"hb",
-        "apellido":"diaz",
-        "documento":4364356,
-        "direccion":"53464563gdfg",
-        "telefono":44325676,
-        "correo_electronico":"asdasdas@dsfsdf"
+      "id_cliente": 1,
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "documento": "27342542",
+      "direccion": "Av. Corrientes 5214",
+      "telefono": "+541167525213",
+      "correo_electronico": "juan.perez@example.com"
     },
     {
-        "id_cliente":2,
-        "nombre":"Maria",
-        "apellido":"Gonzalez",
-        "documento":27654321,
-        "direccion":"Las Heras 256",
-        "telefono":35145678901,
-        "correo_electronico":"maria.gonzalez129@hotmail.com"
+      "id_cliente": 2,
+      "nombre": "María",
+      "apellido": "González",
+      "documento": "30172679",
+      "direccion": "Calle Manuel 812",
+      "telefono": "+543511252542",
+      "correo_electronico": "maria.gonzalez@example.com"
     },
     {
-        "id_cliente":3,
-        "nombre":"Pedro",
-        "apellido":"Fernandez",
-        "documento":33987654,
-        "direccion":"San Mart\u00edn 789",
-        "telefono":34167890123,
-        "correo_electronico":"pedro.fernandez7980@yahoo.com"
+      "id_cliente": 3,
+      "nombre": "Carlos",
+      "apellido": "Rodríguez",
+      "documento": "25425420",
+      "direccion": "San Martín 147",
+      "telefono": "+5424711726147",
+      "correo_electronico": "carlos.rodriguez@example.com"
     },
     {
-        "id_cliente":4,
-        "nombre":"Ana",
-        "apellido":"Lopez",
-        "documento":25876543,
-        "direccion":"Belgrano 1820",
-        "telefono":26178904281,
-        "correo_electronico":"ana.lopez1802@gmail.com"
+      "id_cliente": 4,
+      "nombre": "Ana",
+      "apellido": "López",
+      "documento": "28425421",
+      "direccion": "Mitre 1011",
+      "telefono": "+542618121470",
+      "correo_electronico": "ana.lopez@example.com"
     },
     {
-        "id_cliente":5,
-        "nombre":"123DAS",
-        "apellido":"DSA",
-        "documento":123456789,
-        "direccion":"Sin numeroASD",
-        "telefono":43223523,
-        "correo_electronico":"EAWSERx@hotmail.com"
+      "id_cliente": 5,
+      "nombre": "Luis",
+      "apellido": "Martínez",
+      "documento": "31172682",
+      "direccion": "Belgrano 2022",
+      "telefono": "+542215678901",
+      "correo_electronico": "luis.martinez@example.com"
     },
     {
-        "id_cliente":6,
-        "nombre":"Lauras",
-        "apellido":"Garcias",
-        "documento":38666111,
-        "direccion":"Moreno 987",
-        "telefono":123456789,
-        "correo_electronico":"laura.garcia@live.com"
+      "id_cliente": 6,
+      "nombre": "Laura",
+      "apellido": "Fernández",
+      "documento": "24172683",
+      "direccion": "9 de Julio 3033",
+      "telefono": "+543872479012",
+      "correo_electronico": "laura.fernandez@example.com"
     },
     {
-        "id_cliente":7,
-        "nombre":"Carlos",
-        "apellido":"Rodriguez",
-        "documento":28765432,
-        "direccion":"Sarmiento 213",
-        "telefono":38144324567,
-        "correo_electronico":"carlos.rodriguez@gmail.com"
+      "id_cliente": 7,
+      "nombre": "Jorge",
+      "apellido": "García",
+      "documento": "25172684",
+      "direccion": "Córdoba 4044",
+      "telefono": "+543811470812",
+      "correo_electronico": "jorge.garcia@example.com"
     },
     {
-        "id_cliente":9,
-        "nombre":"Diego",
-        "apellido":"Gomez",
-        "documento":34567890,
-        "direccion":"Alem 567",
-        "telefono":34223456789,
-        "correo_electronico":"diego.gomez@yahoo.com"
+      "id_cliente": 8,
+      "nombre": "Marta",
+      "apellido": "Sánchez",
+      "documento": "26172685",
+      "direccion": "Rivadavia 5055",
+      "telefono": "+542238905214",
+      "correo_electronico": "marta.sanchez@example.com"
     },
     {
-        "id_cliente":10,
-        "nombre":"Sofia",
-        "apellido":"Ramirez",
-        "documento":31234567,
-        "direccion":"Avenida Libertador 789",
-        "telefono":34334567890,
-        "correo_electronico":"sofia_ramirez@gmail.com"
+      "id_cliente": 9,
+      "nombre": "Ricardo",
+      "apellido": "Romero",
+      "documento": "27172686",
+      "direccion": "San Juan 6066",
+      "telefono": "+542649012172",
+      "correo_electronico": "ricardo.romero@example.com"
     },
     {
-        "id_cliente":12,
-        "nombre":"Valentina",
-        "apellido":"Castro",
-        "documento":28123456,
-        "direccion":"Pueyrredon 456 Bahia Blanca",
-        "telefono":29156789012,
-        "correo_electronico":"valentina.castro@yahoo.com"
+      "id_cliente": 10,
+      "nombre": "Sofía",
+      "apellido": "Torres",
+      "documento": "28172687",
+      "direccion": "Buenos Aires 7077",
+      "telefono": "+543880121726",
+      "correo_electronico": "sofia.torres@example.com"
     },
     {
-        "id_cliente":13,
-        "nombre":"Alejandro",
-        "apellido":"Vargas",
-        "documento":3245671,
-        "direccion":"Lavalle 789",
-        "telefono":26467890123,
-        "correo_electronico":"alejandro.vargas@gmail.com"
+      "id_cliente": 11,
+      "nombre": "Diego",
+      "apellido": "Alvarez",
+      "documento": "29172688",
+      "direccion": "Córdoba 8088",
+      "telefono": "+542998128127",
+      "correo_electronico": "diego.alvarez@example.com"
     },
     {
-        "id_cliente":14,
-        "nombre":"Paula",
-        "apellido":"Herrera",
-        "documento":30678912,
-        "direccion":"Guemes 321",
-        "telefono":36278901234,
-        "correo_electronico":"paula.herrera@hotmail.com"
+      "id_cliente": 12,
+      "nombre": "Valeria",
+      "apellido": "Gómez",
+      "documento": "30172689",
+      "direccion": "Mitre 9099",
+      "telefono": "+5429662342542",
+      "correo_electronico": "valeria.gomez@example.com"
+    },
+    {
+      "id_cliente": 13,
+      "nombre": "Roberto",
+      "apellido": "Díaz",
+      "documento": "31172690",
+      "direccion": "Belgrano 1111",
+      "telefono": "+5429011726147",
+      "correo_electronico": "roberto.diaz@example.com"
+    },
+    {
+      "id_cliente": 14,
+      "nombre": "Paula",
+      "apellido": "Pérez",
+      "documento": "32172691",
+      "direccion": "9 de Julio 2121",
+      "telefono": "+542978121470",
+      "correo_electronico": "paula.perez@example.com"
+    },
+    {
+      "id_cliente": 15,
+      "nombre": "Federico",
+      "apellido": "Herrera",
+      "documento": "33172692",
+      "direccion": "San Martín 3131",
+      "telefono": "+543765678901",
+      "correo_electronico": "federico.herrera@example.com"
+    },
+    {
+      "id_cliente": 16,
+      "nombre": "Lorena",
+      "apellido": "Molina",
+      "documento": "34172693",
+      "direccion": "Av. Libertador 4141",
+      "telefono": "+543836789012",
+      "correo_electronico": "lorena.molina@example.com"
+    },
+    {
+      "id_cliente": 17,
+      "nombre": "Sebastián",
+      "apellido": "Silva",
+      "documento": "35172694",
+      "direccion": "Av. Independencia 5151",
+      "telefono": "+542661470812",
+      "correo_electronico": "sebastian.silva@example.com"
+    },
+    {
+      "id_cliente": 18,
+      "nombre": "Gabriela",
+      "apellido": "Gutiérrez",
+      "documento": "36172695",
+      "direccion": "Rivadavia 6161",
+      "telefono": "+543708905214",
+      "correo_electronico": "gabriela.gutierrez@example.com"
+    },
+    {
+      "id_cliente": 19,
+      "nombre": "Marcos",
+      "apellido": "Castro",
+      "documento": "37172696",
+      "direccion": "San Juan 7171",
+      "telefono": "+543629012172",
+      "correo_electronico": "marcos.castro@example.com"
+    },
+    {
+      "id_cliente": 20,
+      "nombre": "Alicia",
+      "apellido": "Rojas",
+      "documento": "38172697",
+      "direccion": "Buenos Aires 8181",
+      "telefono": "+543790121726",
+      "correo_electronico": "alicia.rojas@example.com"
+    },
+    {
+      "id_cliente": 21,
+      "nombre": "Pablo",
+      "apellido": "Navarro",
+      "documento": "39172698",
+      "direccion": "Córdoba 9191",
+      "telefono": "+543438128127",
+      "correo_electronico": "pablo.navarro@example.com"
+    },
+    {
+      "id_cliente": 22,
+      "nombre": "Elena",
+      "apellido": "Mendoza",
+      "documento": "40172699",
+      "direccion": "Mitre 10101",
+      "telefono": "+543852342542",
+      "correo_electronico": "elena.mendoza@example.com"
+    },
+    {
+      "id_cliente": 23,
+      "nombre": "Raúl",
+      "apellido": "Medina",
+      "documento": "41172700",
+      "direccion": "Belgrano 11111",
+      "telefono": "+543831726147",
+      "correo_electronico": "raul.medina@example.com"
+    },
+    {
+      "id_cliente": 24,
+      "nombre": "Clara",
+      "apellido": "Campos",
+      "documento": "42172701",
+      "direccion": "9 de Julio 12121",
+      "telefono": "+543808121470",
+      "correo_electronico": "clara.campos@example.com"
+    },
+    {
+      "id_cliente": 25,
+      "nombre": "Fernando",
+      "apellido": "Vega",
+      "documento": "43172702",
+      "direccion": "San Martín 13131, Santa",
+      "telefono": "+5429545678901",
+      "correo_electronico": "fernando.vega@example.com"
+    },
+    {
+      "id_cliente": 26,
+      "nombre": "Lucía",
+      "apellido": "Suárez",
+      "documento": "44172703",
+      "direccion": "Av. Libertador 14141",
+      "telefono": "+543586789012",
+      "correo_electronico": "lucia.suarez@example.com"
+    },
+    {
+      "id_cliente": 27,
+      "nombre": "Hugo",
+      "apellido": "Aguilar",
+      "documento": "45172704",
+      "direccion": "Av. Independencia 15151",
+      "telefono": "+543421470812",
+      "correo_electronico": "hugo.aguilar@example.com"
+    },
+    {
+      "id_cliente": 28,
+      "nombre": "Julieta",
+      "apellido": "Ortiz",
+      "documento": "46172705",
+      "direccion": "Rivadavia 16161",
+      "telefono": "+542608905214",
+      "correo_electronico": "julieta.ortiz@example.com"
+    },
+    {
+      "id_cliente": 29,
+      "nombre": "Alejandro",
+      "apellido": "Iglesias",
+      "documento": "47172706",
+      "direccion": "San Juan 17171",
+      "telefono": "+543539012172",
+      "correo_electronico": "alejandro.iglesias@example.com"
+    },
+    {
+      "id_cliente": 30,
+      "nombre": "Natalia",
+      "apellido": "Reyes",
+      "documento": "48172707",
+      "direccion": "Buenos Aires 18181",
+      "telefono": "+541720121726",
+      "correo_electronico": "natalia.reyes@example.com"
+    },
+    {
+      "id_cliente": 31,
+      "nombre": "Ignacio",
+      "apellido": "Moreno",
+      "documento": "49172708",
+      "direccion": "Córdoba 19191",
+      "telefono": "+542498128127",
+      "correo_electronico": "ignacio.moreno@example.com"
+    },
+    {
+      "id_cliente": 32,
+      "nombre": "Carolina",
+      "apellido": "Ramos",
+      "documento": "50172709",
+      "direccion": "Mitre 20202",
+      "telefono": "+5434922342542",
+      "correo_electronico": "carolina.ramos@example.com"
+    },
+    {
+      "id_cliente": 33,
+      "nombre": "Daniel",
+      "apellido": "Muñoz",
+      "documento": "51172710",
+      "direccion": "Belgrano 21212",
+      "telefono": "+542801726147",
+      "correo_electronico": "daniel.munoz@example.com"
+    },
+    {
+      "id_cliente": 34,
+      "nombre": "Verónica",
+      "apellido": "Román",
+      "documento": "52172711",
+      "direccion": "9 de Julio 23232",
+      "telefono": "+543368121470",
+      "correo_electronico": "veronica.roman@example.com"
+    },
+    {
+      "id_cliente": 35,
+      "nombre": "Oscar",
+      "apellido": "Sosa",
+      "documento": "53172712",
+      "direccion": "San Martín 24242",
+      "telefono": "+5434465678901",
+      "correo_electronico": "oscar.sosa@example.com"
+    },
+    {
+      "id_cliente": 36,
+      "nombre": "Andrea",
+      "apellido": "Ruiz",
+      "documento": "54172713",
+      "direccion": "Av. Libertador 25252",
+      "telefono": "+542366789012",
+      "correo_electronico": "andrea.ruiz@example.com"
+    },
+    {
+      "id_cliente": 37,
+      "nombre": "Matías",
+      "apellido": "Paz",
+      "documento": "55172714",
+      "direccion": "Av. Independencia 26262",
+      "telefono": "+5424771470812",
+      "correo_electronico": "matias.paz@example.com"
+    },
+    {
+      "id_cliente": 38,
+      "nombre": "Silvina",
+      "apellido": "Luna",
+      "documento": "56172715",
+      "direccion": "Rivadavia 27272",
+      "telefono": "+5435648905214",
+      "correo_electronico": "silvina.luna@example.com"
+    },
+    {
+      "id_cliente": 39,
+      "nombre": "Tomás",
+      "apellido": "Cabrera",
+      "documento": "57172716",
+      "direccion": "San Juan 28282",
+      "telefono": "+5435419012172",
+      "correo_electronico": "tomas.cabrera@example.com"
+    },
+    {
+      "id_cliente": 40,
+      "nombre": "Rocío",
+      "apellido": "Benítez",
+      "documento": "58172717",
+      "direccion": "Buenos Aires 29292",
+      "telefono": "+543880121726",
+      "correo_electronico": "rocio.benitez@example.com"
     }
-]
+  ]

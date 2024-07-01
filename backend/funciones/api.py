@@ -1,13 +1,10 @@
 import pandas as READERTABLE,os,json
 
-#-----------------------------------------------------------------------------------------------------------------#
 def existe_json(nombre_json):
     path_file = "./backend/datos/" + nombre_json + ".json"
     if not os.path.isfile(path_file):
         with open(path_file, 'w') as f:
             json.dump([{}], f, indent=4)
-#-----------------------------------------------------------------------------------------------------------------#
-
 
 #-----------------------------------------------------------------------------------------------------------------#
 def obtener_tabla_desde_json(nombre_del_json):
@@ -23,7 +20,7 @@ def obtener_json_desde_tabla(nombre_del_json,tabla_a_guardar):
 def alta_registro(nombre_del_json, registro_a_agregar):
     tabla = obtener_tabla_desde_json(nombre_del_json)
     campo = "id_"+nombre_del_json
-    id_asignado=0;
+    id_asignado=0
 
     while True:
         if campo not in tabla.columns or not any(tabla[campo] == id_asignado):
@@ -37,7 +34,6 @@ def alta_registro(nombre_del_json, registro_a_agregar):
     obtener_json_desde_tabla(nombre_del_json,tabla)      
     
     
-
 def baja_registro(nombre_del_json,registro_a_eliminar):
     tabla = obtener_tabla_desde_json(nombre_del_json)
     
@@ -46,9 +42,7 @@ def baja_registro(nombre_del_json,registro_a_eliminar):
 
     obtener_json_desde_tabla(nombre_del_json,tabla)    
     
-    
-    
-      
+         
 def modificar_registro(entidad, id_registro, dict_modificado):
     nombre_del_json = entidad
     tabla = obtener_tabla_desde_json(nombre_del_json)
@@ -65,30 +59,39 @@ def modificar_registro(entidad, id_registro, dict_modificado):
         if columna in tabla.columns:
             tabla.at[indice, columna] = valor
         else:
-            print(f"Columna {columna} no encontrada en la tabla {nombre_del_json}. Se omiti esta columna.")
+            print(f"Columna {columna} no encontrada en la tabla {nombre_del_json}. Se omite esta columna.")
 
     obtener_json_desde_tabla(nombre_del_json, tabla)
     print("Registro modificado")
     
-    
-    
-    
-    
       
-def leer_registros(nombre_del_json, ordenar=None, filtro_aplicado=None):
-    
+def leer_registrox(nombre_del_json, ordenar=None, filtro_aplicado=None):  
     tabla = obtener_tabla_desde_json(nombre_del_json)
-    
-    
     
     if filtro_aplicado:
         for clave, valor in filtro_aplicado.items():
             tabla = tabla[tabla[clave] == valor]
             
     if ordenar:
-        tabla = tabla.sort_values(ordenar[0],ascending=ordenar[1])
-        
-    
+        tabla = tabla.sort_values(ordenar[0],ascending=ordenar[1])        
     
     return tabla
+
+def leer_registros(nombre_del_json, ordenar=None, filtro_aplicado=None):
+    tabla = obtener_tabla_desde_json(nombre_del_json)
     
+    if filtro_aplicado:
+        for clave, valor in filtro_aplicado.items():
+            tabla = tabla[tabla[clave] == valor]
+            
+    if ordenar:
+        tabla = tabla.sort_values(ordenar[0], ascending=ordenar[1])
+
+    total_compras = 0
+    total_ventas = 0
+    
+    if nombre_del_json == "transaccion":
+        total_compras = tabla[tabla['tipo_transaccion'] == "Compra"]['monto'].sum()
+        total_ventas = tabla[tabla['tipo_transaccion'] == "Venta"]['monto'].sum()
+
+    return tabla, total_compras, total_ventas

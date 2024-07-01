@@ -4,22 +4,18 @@ from tkinter import ttk
 from backend.funciones import api
 from utils import gui_maker as GM
 
-
-
-
-
-#----------------------------------------------------------------------------------------------#
-
-def accion():
-    print("-----------------------| Boton Presionado |-----------------------------------")
     
 def btn_secciones_click(seccion):
+    GM.destruir_widget(config.total_img)
+    GM.destruir_widget(config.lienzo_total)
+    
     GM.destruir_widget(config.tabla_contenido)
     GM.destruir_widget(config.frame_contenido)
     registros=None
     config.campos=None
     config.tabla_contenido=None
     config.frame_contenido=None
+    
     config.imagen = GM.crear_imagen(canvas_frame=config.lienzo,nombre_imagen="fondos/fondo_index.png",pos_centro_x=1280/2,pos_centro_y=720/2)
     GM.destruir_widget(config.button_agregar)
     GM.destruir_widget(config.button_editar)
@@ -56,8 +52,7 @@ def btn_secciones_click(seccion):
         crear_botones_acciones(config.frame_contenido)
         
         registros=api.leer_registros(entidad)
-        GM.rellenar_tabla(config.tabla_contenido,registros)
-        
+        GM.rellenar_tabla(config.tabla_contenido,registros[0])
         
         
     elif seccion == 'vehiculo':
@@ -87,7 +82,7 @@ def btn_secciones_click(seccion):
         crear_botones_acciones(config.frame_contenido)
         
         registros=api.leer_registros(entidad)
-        GM.rellenar_tabla(config.tabla_contenido,registros)
+        GM.rellenar_tabla(config.tabla_contenido,registros[0])
         
         
         
@@ -118,20 +113,26 @@ def btn_secciones_click(seccion):
         crear_botones_acciones(config.frame_contenido)
         
         registros=api.leer_registros(entidad)
-        GM.rellenar_tabla(config.tabla_contenido,registros)
+        GM.rellenar_tabla(config.tabla_contenido,registros[0])
+        
+        
+        print("TOTAL EN COMPRAS ->",registros[1])
+        print("TOTAL EN  VENTAS ->",registros[2])
+        config.lienzo_total = GM.crear_lienzo_canvas(config.ventana_principal,230,53)
+        GM.posicionar_canva_fondo(config.lienzo_total,pos_x=1011,pos_y=592)
+        config.total_img=GM.crear_imagen(config.lienzo_total, "./fondos/total_monto.png", pos_centro_x=115, pos_centro_y=27)
+        config.total_compra=GM.crear_texto(config.lienzo_total,texto=registros[1],pos_x=11+9,pos_y=32,color_fuente="black",size_fuente=8,tipo_fuente="Arial")
+        config.total_ventas=GM.crear_texto(config.lienzo_total,texto=registros[2],pos_x=138+9,pos_y=32,color_fuente="black",size_fuente=8,tipo_fuente="Arial")
         
         
     else:
         print("Se produjo un error al ejecutar el click - no se escuentra la seccion")
 
 
-
-
-
 def callback_clic_cabecera(entidad,tabla, campo):
     config.orden = not config.orden    
     registros = api.leer_registros(entidad, [campo, config.orden])
-    GM.rellenar_tabla(tabla, registros)
+    GM.rellenar_tabla(tabla, registros[0])
     
 
 def callback_clic_sec_cabecera(entidad, tabla, campo):    
@@ -160,7 +161,12 @@ def btn_busqueda_por_campo(entidad,filtro):
         etiquetas = ("ID vehiculo:","Dominio:","Marca:","Modelo:","Año:","Kilometraje:","Precio de Compra:","Precio de Venta:","Estado:")
 
     registros = api.leer_registros(entidad,filtro_aplicado=filtro)
-    GM.rellenar_tabla(config.tabla_contenido,registros)
+    GM.rellenar_tabla(config.tabla_contenido,registros[0])
+    config.lienzo_total = GM.crear_lienzo_canvas(config.ventana_principal,230,53)
+    GM.posicionar_canva_fondo(config.lienzo_total,pos_x=1011,pos_y=592)
+    config.total_img=GM.crear_imagen(config.lienzo_total, "./fondos/total_monto.png", pos_centro_x=115, pos_centro_y=27)
+    config.total_compra=GM.crear_texto(config.lienzo_total,texto=registros[1],pos_x=11+9,pos_y=32,color_fuente="black",size_fuente=8,tipo_fuente="Arial")
+    config.total_ventas=GM.crear_texto(config.lienzo_total,texto=registros[2],pos_x=138+9,pos_y=32,color_fuente="black",size_fuente=8,tipo_fuente="Arial")
     
     
 def crear_botones_acciones(padre):
