@@ -1,119 +1,344 @@
 [
     {
-        "id_transaccion":0,
-        "id_vehiculo":13,
-        "id_cliente":5,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-03 19:53",
-        "monto":456789,
-        "observaciones":"Peque\u00f1os Detalles\/Detalles de motor"
+        "id_transaccion": 1,
+        "id_vehiculo": 18,
+        "id_cliente": 30,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-18 11:15:14",
+        "monto": 47498,
+        "observaciones": "Kilometraje bajo"
     },
     {
-        "id_transaccion":5,
-        "id_vehiculo":7,
-        "id_cliente":19,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-04-09 16:02",
-        "monto":17000,
-        "observaciones":"El cliente solicit\u00f3 instalaci\u00f3n de equipo de sonido adicional"
+        "id_transaccion": 2,
+        "id_vehiculo": 25,
+        "id_cliente": 35,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-19 15:59:14",
+        "monto": 37243,
+        "observaciones": "Interior impecable"
     },
     {
-        "id_transaccion":7,
-        "id_vehiculo":6,
-        "id_cliente":7,
-        "tipo_transaccion":"Venta",
-        "fecha":"2024-04-17 15:22",
-        "monto":249900,
-        "observaciones":"Incluye alfombras personalizadas como obsequio."
+        "id_transaccion": 3,
+        "id_vehiculo": 20,
+        "id_cliente": 36,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-07-01 14:10:14",
+        "monto": 37235,
+        "observaciones": "Mantenimiento reciente"
     },
     {
-        "id_transaccion":8,
-        "id_vehiculo":9,
-        "id_cliente":16,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-05-17 19:40",
-        "monto":370000,
-        "observaciones":"El cliente eligi\u00f3 un color personalizado para el veh\u00edculo."
+        "id_transaccion": 4,
+        "id_vehiculo": 23,
+        "id_cliente": 34,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-07-01 16:07:14",
+        "monto": 43198,
+        "observaciones": "Neumáticos nuevos"
     },
     {
-        "id_transaccion":9,
-        "id_vehiculo":13,
-        "id_cliente":5,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-01 13:00",
-        "monto":22180,
-        "observaciones":"Veh\u00edculo equipado con sistema de navegaci\u00f3n GPS de \u00faltima generaci\u00f3n"
+        "id_transaccion": 5,
+        "id_vehiculo": 29,
+        "id_cliente": 36,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-07-01 10:30:14",
+        "monto": 17257,
+        "observaciones": "Reciente cambio de aceite"
     },
     {
-        "id_transaccion":10,
-        "id_vehiculo":13,
-        "id_cliente":20,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-03 19:53",
-        "monto":209000,
-        "observaciones":"El cliente recibi\u00f3 un bono de $1000"
+        "id_transaccion": 6,
+        "id_vehiculo": 9,
+        "id_cliente": 4,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-23 18:18:14",
+        "monto": 49669,
+        "observaciones": "Revisado por mecánico"
     },
     {
-        "id_transaccion":11,
-        "id_vehiculo":12,
-        "id_cliente":6,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-05 18:17",
-        "monto":17600,
-        "observaciones":"Incluye kit de seguridad vial"
+        "id_transaccion": 7,
+        "id_vehiculo": 24,
+        "id_cliente": 40,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-07-02 16:53:14",
+        "monto": 13281,
+        "observaciones": "Pintura en buen estado"
     },
     {
-        "id_transaccion":12,
-        "id_vehiculo":8,
-        "id_cliente":17,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-09 08:33",
-        "monto":60000,
-        "observaciones":"El vehiculo tiene asientos de cuero premium"
+        "id_transaccion": 8,
+        "id_vehiculo": 30,
+        "id_cliente": 6,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-07-02 10:12:14",
+        "monto": 7750,
+        "observaciones": "Aire acondicionado funcional"
     },
     {
-        "id_transaccion":15,
-        "id_vehiculo":17,
-        "id_cliente":9,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-20 09:27",
-        "monto":37000,
-        "observaciones":"Vehiculo con sistema de asistencia al estacionamiento."
+        "id_transaccion": 9,
+        "id_vehiculo": 12,
+        "id_cliente": 36,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-25 10:51:14",
+        "monto": 49871,
+        "observaciones": "Recién alineado"
     },
     {
-        "id_transaccion":16,
-        "id_vehiculo":16,
-        "id_cliente":14,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-22 01:43",
-        "monto":28500,
-        "observaciones":"Incluye seguro vehicular por seis meses"
+        "id_transaccion": 10,
+        "id_vehiculo": 11,
+        "id_cliente": 38,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-25 08:16:14",
+        "monto": 18807,
+        "observaciones": "Motor en excelente estado"
     },
     {
-        "id_transaccion":18,
-        "id_vehiculo":20,
-        "id_cliente":15,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-29 03:37",
-        "monto":58522,
-        "observaciones":"Vehiculo con sistema de entretenimiento para los pasajeros traseros"
+        "id_transaccion": 11,
+        "id_vehiculo": 29,
+        "id_cliente": 12,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-04 10:15:14",
+        "monto": 34383,
+        "observaciones": "Frenos nuevos"
     },
     {
-        "id_transaccion":19,
-        "id_vehiculo":19,
-        "id_cliente":10,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-06-30 04:52",
-        "monto":232000,
-        "observaciones":"El cliente solicit\u00f3 polarizar las ventanas"
+        "id_transaccion": 12,
+        "id_vehiculo": 11,
+        "id_cliente": 2,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-30 12:49:14",
+        "monto": 22464,
+        "observaciones": "Un solo dueño anterior"
     },
     {
-        "id_transaccion":20,
-        "id_vehiculo":21,
-        "id_cliente":13,
-        "tipo_transaccion":"Compra",
-        "fecha":"2024-07-01 12:08",
-        "monto":30000,
-        "observaciones":"Incluye la primer revisi\u00f3n t\u00e9cnica gratuita."
+        "id_transaccion": 13,
+        "id_vehiculo": 6,
+        "id_cliente": 15,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-07-01 14:56:14",
+        "monto": 48591,
+        "observaciones": "Historial de servicio disponible"
+    },
+    {
+        "id_transaccion": 14,
+        "id_vehiculo": 3,
+        "id_cliente": 1,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-02 16:23:14",
+        "monto": 35105,
+        "observaciones": "Suspensión revisada"
+    },
+    {
+        "id_transaccion": 15,
+        "id_vehiculo": 20,
+        "id_cliente": 8,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-07 18:15:14",
+        "monto": 14098,
+        "observaciones": "Radio y sonido premium"
+    },
+    {
+        "id_transaccion": 16,
+        "id_vehiculo": 21,
+        "id_cliente": 16,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-22 09:44:14",
+        "monto": 36077,
+        "observaciones": "No tiene daños previos"
+    },
+    {
+        "id_transaccion": 17,
+        "id_vehiculo": 4,
+        "id_cliente": 30,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-07-03 10:45:14",
+        "monto": 33289,
+        "observaciones": "Tapicería en excelente estado"
+    },
+    {
+        "id_transaccion": 18,
+        "id_vehiculo": 32,
+        "id_cliente": 10,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-12 16:54:14",
+        "monto": 30016,
+        "observaciones": "Batería nueva"
+    },
+    {
+        "id_transaccion": 19,
+        "id_vehiculo": 14,
+        "id_cliente": 15,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-27 14:00:14",
+        "monto": 7073,
+        "observaciones": "Sistema de escape nuevo"
+    },
+    {
+        "id_transaccion": 20,
+        "id_vehiculo": 22,
+        "id_cliente": 34,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-21 12:27:14",
+        "monto": 14184,
+        "observaciones": "Sin accidentes"
+    },
+    {
+        "id_transaccion": 21,
+        "id_vehiculo": 1,
+        "id_cliente": 14,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-18 16:09:14",
+        "monto": 21500,
+        "observaciones": "Documentación en regla"
+    },
+    {
+        "id_transaccion": 22,
+        "id_vehiculo": 4,
+        "id_cliente": 15,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-16 11:34:14",
+        "monto": 36577,
+        "observaciones": "Reciente servicio completo"
+    },
+    {
+        "id_transaccion": 23,
+        "id_vehiculo": 9,
+        "id_cliente": 5,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-17 18:09:14",
+        "monto": 42294,
+        "observaciones": "Tapetes originales"
+    },
+    {
+        "id_transaccion": 24,
+        "id_vehiculo": 6,
+        "id_cliente": 12,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-10 18:27:14",
+        "monto": 14778,
+        "observaciones": "Buen historial de propietario"
+    },
+    {
+        "id_transaccion": 25,
+        "id_vehiculo": 22,
+        "id_cliente": 14,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-04 09:11:14",
+        "monto": 30938,
+        "observaciones": "Garantía extendida disponible"
+    },
+    {
+        "id_transaccion": 26,
+        "id_vehiculo": 29,
+        "id_cliente": 21,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-03 15:28:14",
+        "monto": 21166,
+        "observaciones": "Ningún siniestro registrado"
+    },
+    {
+        "id_transaccion": 27,
+        "id_vehiculo": 27,
+        "id_cliente": 20,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-03 07:29:14",
+        "monto": 46929,
+        "observaciones": "Sistema de audio mejorado"
+    },
+    {
+        "id_transaccion": 28,
+        "id_vehiculo": 12,
+        "id_cliente": 4,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-27 16:53:14",
+        "monto": 18564,
+        "observaciones": "Faros LED nuevos"
+    },
+    {
+        "id_transaccion": 29,
+        "id_vehiculo": 25,
+        "id_cliente": 38,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-07-02 18:22:14",
+        "monto": 36668,
+        "observaciones": "Pintura sin rayones"
+    },
+    {
+        "id_transaccion": 30,
+        "id_vehiculo": 7,
+        "id_cliente": 8,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-04 13:32:14",
+        "monto": 38503,
+        "observaciones": "Tapicería original"
+    },
+    {
+        "id_transaccion": 31,
+        "id_vehiculo": 14,
+        "id_cliente": 30,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-02 16:24:14",
+        "monto": 21938,
+        "observaciones": "Baúl espacioso"
+    },
+    {
+        "id_transaccion": 32,
+        "id_vehiculo": 31,
+        "id_cliente": 17,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-05 15:43:14",
+        "monto": 47158,
+        "observaciones": "Sin reparaciones importantes"
+    },
+    {
+        "id_transaccion": 33,
+        "id_vehiculo": 8,
+        "id_cliente": 37,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-12 07:44:14",
+        "monto": 6995,
+        "observaciones": "Vidrios polarizados"
+    },
+    {
+        "id_transaccion": 34,
+        "id_vehiculo": 6,
+        "id_cliente": 40,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-14 08:51:14",
+        "monto": 13089,
+        "observaciones": "Asientos de cuero"
+    },
+    {
+        "id_transaccion": 35,
+        "id_vehiculo": 12,
+        "id_cliente": 20,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-28 16:11:14",
+        "monto": 9328,
+        "observaciones": "Excelente eficiencia de combustible"
+    },
+    {
+        "id_transaccion": 36,
+        "id_vehiculo": 26,
+        "id_cliente": 19,
+        "tipo_transaccion": "Venta",
+        "fecha": "2024-06-19 09:29:14",
+        "monto": 18106,
+        "observaciones": "Equipamiento extra"
+    },
+    {
+        "id_transaccion": 37,
+        "id_vehiculo": 5,
+        "id_cliente": 33,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-19 12:33:14",
+        "monto": 24834,
+        "observaciones": "Buen rendimiento"
+    },
+    {
+        "id_transaccion": 38,
+        "id_vehiculo": 24,
+        "id_cliente": 25,
+        "tipo_transaccion": "Compra",
+        "fecha": "2024-06-29 17:25:14",
+        "monto": 49087,
+        "observaciones": "Pocos kilómetros recorridos"
     }
 ]
